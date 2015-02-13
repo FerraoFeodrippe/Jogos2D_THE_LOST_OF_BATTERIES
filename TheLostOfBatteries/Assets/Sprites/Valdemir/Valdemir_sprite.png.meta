@@ -1,0 +1,742 @@
+fileFormatVersion: 2
+guid: 7c0d201682f17e3469134fa72ead79a8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Valdemir_sprite
+    21300002: Valdemir_sprite_0
+    21300004: Valdemir_sprite_1
+    21300006: Valdemir_sprite_2
+    21300008: Valdemir_sprite_3
+    21300010: Valdemir_sprite_4
+    21300012: Valdemir_sprite_5
+    21300014: Valdemir_sprite_6
+    21300016: Valdemir_sprite_7
+    21300018: Valdemir_sprite_8
+    21300020: Valdemir_sprite_9
+    21300022: Valdemir_sprite_10
+    21300024: Valdemir_sprite_11
+    21300026: Valdemir_sprite_12
+    21300028: Valdemir_sprite_13
+    21300030: Valdemir_sprite_14
+    21300032: Valdemir_sprite_15
+    21300034: Valdemir_sprite_16
+    21300036: Valdemir_sprite_17
+    21300038: Valdemir_sprite_18
+    21300040: Valdemir_sprite_19
+    21300042: Valdemir_sprite_20
+    21300044: Valdemir_sprite_21
+    21300046: Valdemir_sprite_22
+    21300048: Valdemir_sprite_23
+    21300050: Valdemir_sprite_24
+    21300052: Valdemir_sprite_25
+    21300054: Valdemir_sprite_26
+    21300056: Valdemir_sprite_27
+    21300058: Valdemir_sprite_28
+    21300060: Valdemir_sprite_29
+    21300062: Valdemir_sprite_30
+    21300064: Valdemir_sprite_33
+    21300066: Valdemir_sprite_34
+    21300068: Valdemir_sprite_38
+    21300070: Valdemir_sprite_39
+    21300072: Valdemir_sprite_42
+    21300074: Valdemir_sprite_43
+    21300076: Valdemir_sprite_44
+    21300078: Valdemir_sprite_45
+    21300080: Valdemir_sprite_46
+    21300082: Valdemir_sprite_47
+    21300084: Valdemir_sprite_48
+    21300086: Valdemir_sprite_49
+    21300088: Valdemir_sprite_50
+    21300090: Valdemir_sprite_51
+    21300092: Valdemir_sprite_52
+    21300094: Valdemir_sprite_53
+    21300096: Valdemir_sprite_54
+    21300098: Valdemir_sprite_55
+    21300100: Valdemir_sprite_56
+    21300102: Valdemir_sprite_57
+    21300104: Valdemir_sprite_58
+    21300106: Valdemir_sprite_59
+    21300108: Valdemir_sprite_60
+    21300110: Valdemir_sprite_61
+    21300112: Valdemir_sprite_62
+    21300114: Valdemir_sprite_63
+    21300116: Valdemir_sprite_64
+    21300118: Valdemir_sprite_65
+    21300120: Valdemir_sprite_66
+    21300122: Valdemir_sprite_67
+    21300124: Valdemir_sprite_68
+    21300126: Valdemir_sprite_62
+    21300128: Valdemir_sprite_36
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Valdemir_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 480
+        width: 49
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 480
+        width: 49
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 480
+        width: 47
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 480
+        width: 47
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 481
+        width: 49
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 480
+        width: 49
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 481
+        width: 47
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 480
+        width: 47
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 400
+        width: 44
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 400
+        width: 47
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 400
+        width: 61
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 400
+        width: 29
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 400
+        width: 37
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 400
+        width: 47
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 400
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 400
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 400
+        width: 49
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 320
+        width: 53
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 320
+        width: 37
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 320
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 321
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 320
+        width: 40
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 321
+        width: 40
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 320
+        width: 40
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 321
+        width: 40
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 320
+        width: 62
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_27
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 252
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_28
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 255
+        width: 66
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 270
+        width: 71
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_30
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 261
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_33
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 240
+        width: 76
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_34
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 240
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_36
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 287
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_38
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 240
+        width: 76
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_39
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 241
+        width: 71
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_42
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 163
+        width: 42
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_43
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 164
+        width: 39
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_44
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 182
+        width: 63
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_45
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 167
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_46
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 161
+        width: 76
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_47
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 162
+        width: 62
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_48
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 160
+        width: 40
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_49
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 160
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_50
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 160
+        width: 49
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_51
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 80
+        width: 53
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_52
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 80
+        width: 44
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_53
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 80
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_54
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 80
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_55
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 80
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_56
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 80
+        width: 49
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_57
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 80
+        width: 44
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_58
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 80
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_59
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 81
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_60
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 80
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_61
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_62
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 0
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_63
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 8
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_64
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 4
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_65
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_66
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 3
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_67
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 15
+        width: 53
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Valdemir_sprite_68
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 0
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

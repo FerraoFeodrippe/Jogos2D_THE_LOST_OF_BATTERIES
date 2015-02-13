@@ -1,0 +1,11 @@
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\obj\Debug\Assembly-CSharp.dll
+C:\Users\Marcelo\Desktop\TheLostOfBatteries\obj\Debug\Assembly-CSharp.pdb

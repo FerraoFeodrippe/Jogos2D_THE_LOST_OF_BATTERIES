@@ -1,0 +1,257 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class CharacterController2D : MonoBehaviour {
+    private const float SkinWidth = 0.02f;
+    private const int LimitesHorizontais = 8;
+    private const int LimitesVerticais = 4;
+
+    private static readonly float LimiteTangenteInclinacao = Mathf.Tan(75f * Mathf.Deg2Rad);
+
+    public LayerMask PLataformaMark;
+    public ControllerParameters2D ValoresPadrao;
+
+    public ControllerState2D State { get; private set; }
+    public Vector2 Velocidade { get { return _velocidade; } }
+    public bool PodePular 
+    { 
+        get 
+        {
+            if (Parameters.RestricoesPulo == ControllerParameters2D.PuloBehavior.Anywhere)
+                return _jumpIn < 0;
+
+            if (Parameters.RestricoesPulo == ControllerParameters2D.PuloBehavior.OnlyOnGround)
+                return State.NoChao;
+
+            return false;
+        } 
+    }
+    public bool HandleCollisions { get; set; }
+    public ControllerParameters2D Parameters { get { return _overrrideParameters ?? ValoresPadrao; } }
+    public GameObject StandingOn { get; private set; }
+
+    private Vector2 _velocidade;
+    private Transform _transform;
+    private Vector3 _localScale;
+    private BoxCollider2D _boxCollider;
+    private ControllerParameters2D _overrrideParameters;
+    private float _jumpIn;
+
+    private float
+        _verticalDistanceBetweenRays,
+        _horizontalDistanceBetweenRays;
+
+    private Vector3
+        _raycastTopLeft,
+        _raycastBottomRight,
+        _raycastBottomLeft;
+
+    public void Awake()
+    {
+        HandleCollisions = true;
+        State = new ControllerState2D();
+        _transform = transform;
+        _localScale = transform.localScale;
+        _boxCollider = GetComponent<BoxCollider2D>();
+
+        var collidionWidth = _boxCollider.size.x * Mathf.Abs(transform.localScale.x) - (2 * SkinWidth);
+        _horizontalDistanceBetweenRays = collidionWidth / (LimitesVerticais - 1);
+
+        var collidionHeigth = _boxCollider.size.y * Mathf.Abs(transform.localScale.y) - (2 * SkinWidth);
+        _verticalDistanceBetweenRays = collidionHeigth / (LimitesHorizontais - 1);
+    }
+
+    public void Addforce(Vector2 force)
+    {
+        _velocidade += force;
+    }
+
+    public void SetForce(Vector2 force)
+    {
+        _velocidade = force;
+    }
+
+    public void SetHorizontalForce (float x)
+    {
+        _velocidade.x = x;
+    }
+    public void Setverticalforce (float y)
+    {
+        _velocidade.y = y;
+    }
+
+    public void Jump()
+    {
+        Addforce(new Vector2(0, Parameters.JumpMagnitude));
+        _jumpIn = Parameters.FrequenciaPulo;
+
+    }
+
+    public void LateUpdate()
+    {
+        _jumpIn = Time.deltaTime;
+        _velocidade.y += Parameters.Gravidade * Time.deltaTime;
+        Move(Velocidade * Time.deltaTime);
+    }
+
+    private void Move(Vector2 deltaMoviment)
+    {
+        var wasGrounded = State.ColidindoBaixo;
+        State.Reset();
+        
+        if (HandleCollisions)
+        {
+            HandlePlataforms();
+            CalculateRaysOrigins();
+
+            if (deltaMoviment.y < 0 && wasGrounded)
+                HandleInclinacaoVertical(ref deltaMoviment);
+
+            if (Mathf.Abs(deltaMoviment.x) > 0.001f)
+                MoverHorizontal(ref deltaMoviment);
+
+            MoverVertical(ref deltaMoviment);
+        }
+
+        _transform.Translate(deltaMoviment, Space.World);
+
+        if (Time.deltaTime > 0)
+            _velocidade = deltaMoviment / Time.deltaTime;
+
+        _velocidade.x = Mathf.Min(_velocidade.x, Parameters.VelocidadeMax.x);
+        _velocidade.y = Mathf.Min(_velocidade.y, Parameters.VelocidadeMax.y);
+
+        if (State.MovendoInclinadoCima)
+            _velocidade.y = 0;
+    }
+
+    private void HandlePlataforms()
+    {
+
+    }
+
+    private void CalculateRaysOrigins()
+    {
+        var size = new Vector2(_boxCollider.size.x * Mathf.Abs(_localScale.x), _boxCollider.size.y * Mathf.Abs(_localScale.y)) / 2 ;
+        var center = new Vector2(_boxCollider.center.x * _localScale.x, _boxCollider.center.y * _localScale.y) ;
+
+        _raycastTopLeft = _transform.position + new Vector3(center.x - size.x + SkinWidth, center.y + size.y - SkinWidth);
+        _raycastBottomRight = _transform.position + new Vector3(center.x + size.x - SkinWidth, center.y - size.y + SkinWidth);
+        _raycastBottomLeft = _transform.position + new Vector3(center.x - size.x + SkinWidth, center.y - size.y + SkinWidth);
+    }
+
+    private void MoverHorizontal(ref Vector2 deltaMoviment)
+    {
+        var isGoingRight = deltaMoviment.x > 0;
+        var rayDistance = Mathf.Abs(deltaMoviment.x) + SkinWidth;
+        var raydirection = isGoingRight ? Vector2.right : -Vector2.right;
+        var rayOrigin = isGoingRight ? _raycastBottomRight : _raycastBottomLeft;
+
+
+        for (var i = 0; i < LimitesHorizontais; i++)
+        {
+            var rayVector = new Vector2(rayOrigin.x, rayOrigin.y + (i * _verticalDistanceBetweenRays));
+            Debug.DrawRay(rayVector, raydirection * rayDistance, Color.red);
+
+            var rayCastHit = Physics2D.Raycast(rayVector, raydirection, rayDistance, PLataformaMark);
+            if (!rayCastHit)
+                continue;
+
+            if (i == 0 && HandleInclinacaoHorizontal(ref deltaMoviment, Vector2.Angle(rayCastHit.normal, Vector2.up), isGoingRight))
+                break;
+
+            deltaMoviment.x = rayCastHit.point.x - rayVector.x;
+            rayDistance = Mathf.Abs(deltaMoviment.x);
+
+            if (isGoingRight)
+            {
+                deltaMoviment.x -= SkinWidth;
+                State.ColidindoDir = true;
+            }
+            else
+            {
+                deltaMoviment.x += SkinWidth;
+                State.ColidindoEsq =  true;
+            }
+
+            if (rayDistance < SkinWidth + 0.001f)
+                break;
+        }
+    }
+
+    private void MoverVertical(ref Vector2 deltaMoviment)
+    {
+        var isGoingUp = deltaMoviment.y > 0;
+        var rayDistance = Mathf.Abs(deltaMoviment.y) + SkinWidth;
+        var raydirection = isGoingUp ? Vector2.up : -Vector2.up;
+        var rayOrigin = isGoingUp ? _raycastTopLeft : _raycastBottomLeft;
+
+        rayOrigin.x += deltaMoviment.x;
+
+        var standingOnDistance = float.MaxValue;
+
+        for (var i = 0; i < LimitesVerticais; i++)
+        {
+            var rayVector = new Vector2(rayOrigin.x + (i * _horizontalDistanceBetweenRays), rayOrigin.y);
+            Debug.DrawRay(rayVector, raydirection * rayDistance, Color.red);
+
+            var rayCastHit = Physics2D.Raycast(rayVector, raydirection, rayDistance, PLataformaMark);
+            if (!rayCastHit)
+                continue;
+
+            deltaMoviment.y = rayCastHit.point.y - rayVector.y;
+            rayDistance = Mathf.Abs(deltaMoviment.y);
+
+            if (!isGoingUp)
+            {
+                var verticalDistanceToHit = _transform.position.y - rayCastHit.point.y;
+                if (verticalDistanceToHit < standingOnDistance)
+                {
+                    standingOnDistance = verticalDistanceToHit;
+                    StandingOn = rayCastHit.collider.gameObject; 
+                }
+                
+            }
+
+            deltaMoviment.y = rayCastHit.point.y - rayVector.y;
+            rayDistance = Mathf.Abs(deltaMoviment.y);
+
+            if (isGoingUp)
+            {
+                deltaMoviment.y -= SkinWidth;
+                State.ColidindoCima = true;
+            }
+            else
+            {
+                deltaMoviment.y += SkinWidth;
+                State.ColidindoBaixo = true;
+            }
+
+            if (!isGoingUp && deltaMoviment.y > .0001f)
+                State.MovendoInclinadoCima = true;
+
+            if (rayDistance < SkinWidth + .0001f)
+                break;
+        }
+        
+    }
+
+    private void HandleInclinacaoVertical(ref Vector2 deltaMoviment)
+    {
+    }
+
+    private bool HandleInclinacaoHorizontal(ref Vector2 deltaMoviment, float angle, bool isGoingRight)
+    {
+        return false;
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+
+    }
+}

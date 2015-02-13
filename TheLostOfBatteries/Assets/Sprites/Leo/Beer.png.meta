@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: 99ffdb5fbac82eb48beb9449fb2c1dc6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Beer
+    21300002: Beer_0
+    21300004: Beer_1
+    21300006: Beer_2
+    21300008: Beer_3
+    21300010: Beer_4
+    21300012: Beer_5
+    21300014: Beer_6
+    21300016: Beer_7
+    21300018: Beer_8
+    21300020: Beer_9
+    21300022: Beer_10
+    21300024: Beer_11
+    21300026: Beer_12
+    21300028: Beer_13
+    21300030: Beer_14
+    21300032: Beer_15
+    21300034: Beer_16
+    21300036: Beer_17
+    21300038: Beer_18
+    21300040: Beer_19
+    21300042: Beer_20
+    21300044: Beer_21
+    21300046: Beer_22
+    21300048: Beer_23
+    21300050: Beer_24
+    21300052: Beer_25
+    21300054: Beer_26
+    21300056: Beer_27
+    21300058: Beer_28
+    21300060: Beer_29
+    21300062: Beer_30
+    21300064: Beer_31
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Beer_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 158
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 157
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 159
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 161
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 164
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_5
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 163
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_6
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 157
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_7
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 156
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_8
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 157
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_9
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 157
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 110
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_11
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 115
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_12
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 117
+        width: 29
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_13
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 114
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_14
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 109
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_15
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 109
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_16
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 51
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_17
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 51
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 51
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_19
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 58
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_20
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 65
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_21
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 66
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_22
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 70
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_23
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 70
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_24
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 69
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_25
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 70
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_26
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 20
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_27
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 20
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_28
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 18
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 8
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_30
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 2
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Beer_31
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
