@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterController2D.cs" />
      <Compile Include="Assets\Scripts\ControllerParameters2D.cs" />
+     <Compile Include="Assets\Scripts\ControllerPhsyicsVolume2D.cs" />
      <Compile Include="Assets\Scripts\ControllerState2D.cs" />
      <Compile Include="Assets\Scripts\JumpPlataform.cs" />
      <Compile Include="Assets\Scripts\PathDefination.cs" />

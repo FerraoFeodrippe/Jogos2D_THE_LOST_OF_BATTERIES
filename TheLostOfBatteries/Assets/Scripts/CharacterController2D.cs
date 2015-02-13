@@ -117,6 +117,9 @@ public class CharacterController2D : MonoBehaviour {
                 MoverHorizontal(ref deltaMoviment);
 
             MoverVertical(ref deltaMoviment);
+
+            CorrectHorizontalPlacement(ref deltaMoviment, true);
+            CorrectHorizontalPlacement(ref deltaMoviment, false);
         }
 
         _transform.Translate(deltaMoviment, Space.World);
@@ -176,6 +179,32 @@ public class CharacterController2D : MonoBehaviour {
             PlataformVelocity = Vector3.zero;
 
         StandingOn = null;
+    }
+
+    private void CorrectHorizontalPlacement(ref Vector2 deltaMoviment, bool isRight)
+    {
+        var halfWidth = (_boxCollider.size.x * _localScale.x) / 2f;
+        var rayOrigin = isRight ? _raycastBottomRight : _raycastBottomLeft;
+
+        if (isRight)
+            rayOrigin.x -= (halfWidth - SkinWidth);
+        else
+            rayOrigin.x += (halfWidth - SkinWidth);
+
+        var rayDirection = isRight ? Vector2.right : -Vector2.right;
+        var offset = 0f;
+
+        for (var i=1; i< LimitesHorizontais -1; i++)
+        {
+            var rayVector = new Vector2(deltaMoviment.x +  rayOrigin.x, deltaMoviment.y + rayOrigin.y + (i * _verticalDistanceBetweenRays));
+            //Debug.DrawRay(rayVector, rayDirection * halfWidth, isRight ? Color.cyan : Color.magenta);
+            var raycastHit = Physics2D.Raycast(rayVector, rayDirection, halfWidth, PLataformaMark);
+            if (!raycastHit)
+                continue;
+
+            offset = isRight ? ((raycastHit.point.x - _transform.position.x) - halfWidth) : (halfWidth - (_transform.position.x - raycastHit.point.x));
+        }
+        deltaMoviment.x += offset;
     }
 
     private void CalculateRaysOrigins()
@@ -295,10 +324,7 @@ public class CharacterController2D : MonoBehaviour {
         Debug.DrawRay(slopeRayVector, direction * slopeDistance, Color.yellow);
         var rayCastHit = Physics2D.Raycast(slopeRayVector, direction, slopeDistance, PLataformaMark);
         if (!rayCastHit)
-        {
-
-        }
-
+            return;
         
         var isMovingDownSlope = Mathf.Sign(rayCastHit.normal.x) == Mathf.Sign(deltaMoviment.x);
         if (!isMovingDownSlope)
@@ -311,9 +337,6 @@ public class CharacterController2D : MonoBehaviour {
         State.MovendoInclinadoBaixo = true;
         State.AnguloInclinacao = angle;
         deltaMoviment.y = rayCastHit.point.y - slopeRayVector.y;
-
-
-
     }
 
     private bool HandleInclinacaoHorizontal(ref Vector2 deltaMoviment, float angle, bool isGoingRight)
@@ -339,11 +362,19 @@ public class CharacterController2D : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        var parameters = other.gameObject.GetComponent<ControllerPhsyicsVolume2D>();
+        if (parameters == null)
+            return;
 
+        _overrrideParameters = parameters.Parameters;
     }
 
     public void OnTriggerExit2D(Collider2D other)
     {
+        var parameters = other.gameObject.GetComponent<ControllerPhsyicsVolume2D>();
+        if (parameters == null)
+            return;
 
+        _overrrideParameters = null;
     }
 }
