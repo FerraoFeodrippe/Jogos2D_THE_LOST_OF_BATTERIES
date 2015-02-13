@@ -29,6 +29,7 @@ public class CharacterController2D : MonoBehaviour {
     public bool HandleCollisions { get; set; }
     public ControllerParameters2D Parameters { get { return _overrrideParameters ?? ValoresPadrao; } }
     public GameObject StandingOn { get; private set; }
+    public Vector3 PlataformVelocity { get; private set; }
 
     private Vector2 _velocidade;
     private Transform _transform;
@@ -36,6 +37,11 @@ public class CharacterController2D : MonoBehaviour {
     private BoxCollider2D _boxCollider;
     private ControllerParameters2D _overrrideParameters;
     private float _jumpIn;
+    private GameObject _lastStandingOn;
+
+    private Vector3
+        _activeGlobalPlataformPoint,
+        _activeLocalPlataformPoint;
 
     private float
         _verticalDistanceBetweenRays,
@@ -123,11 +129,53 @@ public class CharacterController2D : MonoBehaviour {
 
         if (State.MovendoInclinadoCima)
             _velocidade.y = 0;
+
+        if (StandingOn != null)
+        {
+            _activeGlobalPlataformPoint = transform.position;
+            _activeLocalPlataformPoint = StandingOn.transform.InverseTransformPoint(transform.position);
+
+            Debug.DrawLine(transform.position, _activeGlobalPlataformPoint);
+            Debug.DrawLine(transform.position, _activeLocalPlataformPoint);
+
+            if (_lastStandingOn != StandingOn)
+            {
+                if (_lastStandingOn != null)
+                {
+                    _lastStandingOn.SendMessage("ControllerExit2D", this, SendMessageOptions.DontRequireReceiver);
+                }
+
+                StandingOn.SendMessage("ControllerEnter2D", this, SendMessageOptions.DontRequireReceiver);
+                _lastStandingOn = StandingOn;
+            }
+            else if (StandingOn != null)
+                StandingOn.SendMessage("ControllerStay2D", this, SendMessageOptions.DontRequireReceiver);
+
+
+        }
+        else if (_lastStandingOn != null)
+        {
+            _lastStandingOn.SendMessage("ControllerExit2D", this, SendMessageOptions.DontRequireReceiver);
+            _lastStandingOn = null;
+        }
     }
 
     private void HandlePlataforms()
     {
+        if (StandingOn != null)
+        {
+            var newGlobalPlataformPoint = StandingOn.transform.TransformPoint(_activeLocalPlataformPoint);
+            var moveDistance = newGlobalPlataformPoint - _activeGlobalPlataformPoint;
 
+            if (moveDistance != Vector3.zero)
+                transform.Translate(moveDistance, Space.World);
+
+            PlataformVelocity = (newGlobalPlataformPoint - _activeGlobalPlataformPoint) / Time.deltaTime;
+        }
+        else
+            PlataformVelocity = Vector3.zero;
+
+        StandingOn = null;
     }
 
     private void CalculateRaysOrigins()
@@ -238,11 +286,55 @@ public class CharacterController2D : MonoBehaviour {
 
     private void HandleInclinacaoVertical(ref Vector2 deltaMoviment)
     {
+        var center = (_raycastBottomLeft.x + _raycastBottomRight.x) / 2;
+        var direction = -Vector2.up;
+
+        var slopeDistance = LimiteTangenteInclinacao * (_raycastBottomRight.x - center);
+        var slopeRayVector = new Vector2(center, _raycastBottomLeft.y);
+
+        Debug.DrawRay(slopeRayVector, direction * slopeDistance, Color.yellow);
+        var rayCastHit = Physics2D.Raycast(slopeRayVector, direction, slopeDistance, PLataformaMark);
+        if (!rayCastHit)
+        {
+
+        }
+
+        
+        var isMovingDownSlope = Mathf.Sign(rayCastHit.normal.x) == Mathf.Sign(deltaMoviment.x);
+        if (!isMovingDownSlope)
+            return;
+
+        var angle = Vector2.Angle(rayCastHit.normal, Vector2.up);
+        if (Mathf.Abs(angle) < 0.001)
+            return;
+
+        State.MovendoInclinadoBaixo = true;
+        State.AnguloInclinacao = angle;
+        deltaMoviment.y = rayCastHit.point.y - slopeRayVector.y;
+
+
+
     }
 
     private bool HandleInclinacaoHorizontal(ref Vector2 deltaMoviment, float angle, bool isGoingRight)
     {
-        return false;
+        if (Mathf.RoundToInt(angle) == 90)
+            return false;  
+
+        if (angle > Parameters.AlguloLimite)
+        {
+            deltaMoviment.x = 0;
+            return true;
+        }
+
+        if (deltaMoviment.y > .07f)
+            return true;
+
+        deltaMoviment.x += isGoingRight ? -SkinWidth : SkinWidth;
+        deltaMoviment.y = Mathf.Abs(Mathf.Tan(angle * Mathf.Deg2Rad) * deltaMoviment.x);
+        State.MovendoInclinadoCima= true;
+        State.ColidindoBaixo = true;
+        return true;    
     }
 
     public void OnTriggerEnter2D(Collider2D other)
