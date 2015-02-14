@@ -39,6 +39,7 @@ public class CharacterController2D : MonoBehaviour {
     private float _jumpIn;
     private GameObject _lastStandingOn;
 
+
     private Vector3
         _activeGlobalPlataformPoint,
         _activeLocalPlataformPoint;
@@ -59,6 +60,7 @@ public class CharacterController2D : MonoBehaviour {
         _transform = transform;
         _localScale = transform.localScale;
         _boxCollider = GetComponent<BoxCollider2D>();
+      
 
         var collidionWidth = _boxCollider.size.x * Mathf.Abs(transform.localScale.x) - (2 * SkinWidth);
         _horizontalDistanceBetweenRays = collidionWidth / (LimitesVerticais - 1);
@@ -161,6 +163,7 @@ public class CharacterController2D : MonoBehaviour {
             _lastStandingOn.SendMessage("ControllerExit2D", this, SendMessageOptions.DontRequireReceiver);
             _lastStandingOn = null;
         }
+
     }
 
     private void HandlePlataforms()
@@ -359,6 +362,7 @@ public class CharacterController2D : MonoBehaviour {
         State.ColidindoBaixo = true;
         return true;    
     }
+
 
     public void OnTriggerEnter2D(Collider2D other)
     {
