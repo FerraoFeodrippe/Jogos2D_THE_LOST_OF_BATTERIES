@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public float SpeedAccelerationInAir = 5f;
     public int MaxHealth = 3;
     public GameObject OuchEffect;
+    public Animator Animator;
 
     public int Health { get; private set; }
     public bool IsDead { get; private set; }
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     public void Awake()
     {
         _controller = GetComponent<CharacterController2D>();
+        Animator = GetComponentInChildren<Animator>();
         _IsFacingRight = transform.localScale.x > 0;
         Health = MaxHealth;
 
@@ -29,20 +31,27 @@ public class Player : MonoBehaviour
     {
         if (!IsDead)
             HandleInput();
-
+        else
+        {
+            int fator = _IsFacingRight ? 1 : -1;
+            _normalizeHorizontalSpeed = fator*_normalizeHorizontalSpeed > 0 ? _normalizeHorizontalSpeed - 0.02f*fator : 0;
+        }
         var movementFactor = _controller.State.NoChao ? SpeedAccelerationOnGrond : SpeedAccelerationInAir;
         _controller.SetHorizontalForce(Mathf.Lerp(_controller.Velocidade.x, _normalizeHorizontalSpeed * MaxSpeed, Time.deltaTime * movementFactor));
 
+        Animator.SetBool("IsGround", _controller.State.NoChao);
+        Animator.SetBool("IsDead", IsDead);
+        Animator.SetFloat("Speed", Mathf.Abs(_controller.Velocidade.x) / MaxSpeed);
     }
 
     public void Kill()
     {
-        _controller.HandleCollisions = false;
+        //_controller.HandleCollisions = false;
         collider2D.enabled = false;
         IsDead = true;
         Health = 0;
-
         _controller.SetForce(new Vector2(0, 5));
+
     }
 
     public void RespawnAt(Transform spawnPoint)
@@ -65,7 +74,6 @@ public class Player : MonoBehaviour
 
         if (Health <= 0)
             LevelManager.Instance.KillPlayer();
-
 
     }
 
@@ -91,6 +99,11 @@ public class Player : MonoBehaviour
         if (_controller.PodePular && Input.GetKeyDown(KeyCode.Z))
         {
             _controller.Jump();
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            Animator.SetTrigger("Punch");
         }
 
     }

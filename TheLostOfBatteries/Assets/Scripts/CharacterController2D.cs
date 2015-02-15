@@ -222,6 +222,7 @@ public class CharacterController2D : MonoBehaviour {
 
     private void MoverHorizontal(ref Vector2 deltaMoviment)
     {
+
         var isGoingRight = deltaMoviment.x > 0;
         var rayDistance = Mathf.Abs(deltaMoviment.x) + SkinWidth;
         var raydirection = isGoingRight ? Vector2.right : -Vector2.right;
