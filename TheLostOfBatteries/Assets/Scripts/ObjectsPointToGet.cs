@@ -16,6 +16,9 @@ public class ObjectsPointToGet : MonoBehaviour, IPlayerRespawnListener {
 
         gameObject.SetActive(false);
 
+        FloatingText.Show(string.Format("+{0}!", PointsToAdd), "PointObjectText",
+            new FromWorldPointTextPositioner(Camera.main, transform.position, 1.5f, 50));
+
     }
 
     public void OnPlayerRespawnInThisCheckPoint(CheckPoint checkPoint, Player player)

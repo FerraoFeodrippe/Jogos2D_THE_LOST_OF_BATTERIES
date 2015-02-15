@@ -48,15 +48,20 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AutoDestroyParticleSystem.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\CenteredTextPosition.cs" />
      <Compile Include="Assets\Scripts\CharacterController2D.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\Scripts\ControllerParameters2D.cs" />
      <Compile Include="Assets\Scripts\ControllerPhsyicsVolume2D.cs" />
      <Compile Include="Assets\Scripts\ControllerState2D.cs" />
+     <Compile Include="Assets\Scripts\FloatingText.cs" />
+     <Compile Include="Assets\Scripts\FollowObject.cs" />
+     <Compile Include="Assets\Scripts\FromWorldPointTextPositioner.cs" />
      <Compile Include="Assets\Scripts\GameHud.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GiveDamageToPlayer.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\IFloatingTextPositioner.cs" />
      <Compile Include="Assets\Scripts\IPlayerRespawnListener.cs" />
      <Compile Include="Assets\Scripts\Instakill.cs" />
      <Compile Include="Assets\Scripts\JumpPlataform.cs" />
