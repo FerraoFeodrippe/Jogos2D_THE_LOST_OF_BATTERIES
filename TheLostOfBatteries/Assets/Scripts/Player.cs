@@ -14,9 +14,13 @@ public class Player : MonoBehaviour
     public int MaxHealth = 3;
     public GameObject OuchEffect;
     public Animator Animator;
+    public bool Focused;
+    public int PosPlayerSelect;
+
 
     public int Health { get; private set; }
     public bool IsDead { get; private set; }
+
 
     public void Awake()
     {
@@ -24,21 +28,26 @@ public class Player : MonoBehaviour
         Animator = GetComponentInChildren<Animator>();
         _IsFacingRight = transform.localScale.x > 0;
         Health = MaxHealth;
-
     }
 
     public void Update()
     {
-        if (!IsDead)
-            HandleInput();
+        if (!Focused)
+        {
+            _controller.SetHorizontalForce(0);
+        }
         else
         {
-            int fator = _IsFacingRight ? 1 : -1;
-            _normalizeHorizontalSpeed = fator*_normalizeHorizontalSpeed > 0 ? _normalizeHorizontalSpeed - 0.02f*fator : 0;
+            if (!IsDead)
+                HandleInput();
+            else
+            {
+                int fator = _IsFacingRight ? 1 : -1;
+                _normalizeHorizontalSpeed = fator * _normalizeHorizontalSpeed > 0 ? _normalizeHorizontalSpeed - 0.02f * fator : 0;
+            }
+            var movementFactor = _controller.State.NoChao ? SpeedAccelerationOnGrond : SpeedAccelerationInAir;
+            _controller.SetHorizontalForce(Mathf.Lerp(_controller.Velocidade.x, _normalizeHorizontalSpeed * MaxSpeed, Time.deltaTime * movementFactor));
         }
-        var movementFactor = _controller.State.NoChao ? SpeedAccelerationOnGrond : SpeedAccelerationInAir;
-        _controller.SetHorizontalForce(Mathf.Lerp(_controller.Velocidade.x, _normalizeHorizontalSpeed * MaxSpeed, Time.deltaTime * movementFactor));
-
         Animator.SetBool("IsGround", _controller.State.NoChao);
         Animator.SetBool("IsDead", IsDead);
         Animator.SetFloat("Speed", Mathf.Abs(_controller.Velocidade.x) / MaxSpeed);
@@ -73,12 +82,19 @@ public class Player : MonoBehaviour
         Health -= damage;
 
         if (Health <= 0)
-            LevelManager.Instance.KillPlayer();
+            LevelManager.Instance.KillPlayer(this);
 
     }
 
     private void HandleInput()
     {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            _normalizeHorizontalSpeed = 0;
+            LevelManager.Instance.NextPLayer();
+            return;
+        }
+
         if (Input.GetKey(KeyCode.L))
         {
             _normalizeHorizontalSpeed = 1;

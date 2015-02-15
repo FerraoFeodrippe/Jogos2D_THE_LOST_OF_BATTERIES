@@ -9,6 +9,6 @@ public class Instakill : MonoBehaviour {
         if (player == null)
             return;
 
-        LevelManager.Instance.KillPlayer();
+        LevelManager.Instance.KillPlayer(player);
     }
 }

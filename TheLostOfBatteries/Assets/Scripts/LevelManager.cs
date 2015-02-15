@@ -27,6 +27,8 @@ public class LevelManager : MonoBehaviour {
     private DateTime _started;
     private int _savedPoints;
 
+    private IEnumerable<Player> Players;
+    private static int CurrentPlayer = 0;
 
     public CheckPoint DebugSpawn;
     public int BonusCutoffSeconds;
@@ -37,16 +39,17 @@ public class LevelManager : MonoBehaviour {
     public void Awake ()
     {
         Instance = this;
-
+        Players = FindObjectsOfType<Player>().OrderBy(e => e.PosPlayerSelect);
     }
 
 	public void Start () {
 
         _checkPoints = FindObjectsOfType<CheckPoint>().OrderBy(e => e.transform.position.x ).ToList();
         _currentCheckPointIndex = _checkPoints.Count > 0 ? 0 : -1;
-
-        Player = FindObjectOfType<Player>();
+        
+        Player = Players.ElementAt(CurrentPlayer);
         Camera = FindObjectOfType<CameraController>();
+        Camera.Player = Player.transform;
 
         _started = DateTime.UtcNow;
 
@@ -99,21 +102,44 @@ public class LevelManager : MonoBehaviour {
 
 	}
 
-    public void KillPlayer ()
+
+
+    public void NextPLayer()
     {
-        StartCoroutine(KillPlayerCo());
+        StartCoroutine(NextPlayerCo());
+    }
+   
+    public IEnumerator NextPlayerCo()
+    {
+        var totalPlayer = Players.Count();
+        CurrentPlayer = (CurrentPlayer + 1) % totalPlayer;
+        Player.Focused = false;
+        Player = Players.ElementAt(CurrentPlayer);
+        yield return new WaitForSeconds(0.1f);
+        Camera.Player = Player.transform;
+        Player.Focused = true;
     }
 
-    public IEnumerator KillPlayerCo()
+    public void KillPlayer(Player playerToKill)
     {
-        Player.Kill();
-        Camera.IsFollowing = false;
-        yield return new WaitForSeconds(2f);
+        StartCoroutine(KillPlayerCo(playerToKill));
+    }
 
-        Camera.IsFollowing = true;
+    public IEnumerator KillPlayerCo(Player playerToKill)
+    {
+        playerToKill.Kill();
+        if (Players.ElementAt(CurrentPlayer) == playerToKill)
+        {
+            Camera.IsFollowing = false;
+            yield return new WaitForSeconds(1.5f);
+
+            Camera.IsFollowing = true;
+        }
+        else
+            yield return new WaitForSeconds(1.5f);
 
         if (_currentCheckPointIndex != -1)
-            _checkPoints[_currentCheckPointIndex].SpawnPlayer(Player);
+            _checkPoints[_currentCheckPointIndex].SpawnPlayer(playerToKill);
 
         _started = DateTime.UtcNow;
         GameManager.Instance.ResetPoints(_savedPoints);
