@@ -49,6 +49,20 @@ public class LevelManager : MonoBehaviour {
 
         _started = DateTime.UtcNow;
 
+        var listeners = FindObjectsOfType<MonoBehaviour>().OfType<IPlayerRespawnListener>();
+        foreach (var listener in listeners)
+        {
+            for (var i = _checkPoints.Count - 1; i >= 0; i--)
+            {
+                var distance = ((MonoBehaviour)listener).transform.position.x - _checkPoints[i].transform.position.x;
+                if (distance < 0)
+                    continue;
+
+                _checkPoints[i].AssingObjectToCheckPoint(listener);
+                break;
+            }
+        }
+
 #if UNITY_EDITOR
         if (DebugSpawn != null)
             DebugSpawn.SpawnPlayer(Player);
@@ -79,6 +93,9 @@ public class LevelManager : MonoBehaviour {
         GameManager.Instance.AddPoints(CurrentTimebonus);
         _savedPoints = GameManager.Instance.Points;
         _started = DateTime.UtcNow;
+
+        
+
 	}
 
     public void KillPlayer ()

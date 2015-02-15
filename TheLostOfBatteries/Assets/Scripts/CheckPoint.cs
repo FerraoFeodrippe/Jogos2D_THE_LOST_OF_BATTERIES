@@ -1,10 +1,16 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    public void Start()
+    private List<IPlayerRespawnListener> _listeners;
+
+
+
+    public void Awake()
     {
+        _listeners = new List<IPlayerRespawnListener>();
 
     }
 
@@ -26,11 +32,16 @@ public class CheckPoint : MonoBehaviour
     public void SpawnPlayer(Player player)
     {
         player.RespawnAt(transform);
+
+        foreach(var listener in _listeners)
+        {
+            listener.OnPlayerRespawnInThisCheckPoint(this, player);
+        }
     }
 
-    public void AssingObjectToCheckPoint()
+    public void AssingObjectToCheckPoint(IPlayerRespawnListener listener)
     {
-
+        _listeners.Add(listener);
     }
 }
 
