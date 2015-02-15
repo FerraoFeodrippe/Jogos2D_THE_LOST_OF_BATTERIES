@@ -6,6 +6,7 @@ using System;
 
 public class LevelManager : MonoBehaviour {
 
+
     public static LevelManager Instance { get; private set; }
 
     public Player Player { get; private set;}

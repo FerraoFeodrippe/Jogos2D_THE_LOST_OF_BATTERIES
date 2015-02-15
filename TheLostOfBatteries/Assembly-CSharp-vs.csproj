@@ -55,6 +55,8 @@
      <Compile Include="Assets\Scripts\ControllerState2D.cs" />
      <Compile Include="Assets\Scripts\GameHud.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GiveDamageToPlayer.cs" />
+     <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\IPlayerRespawnListener.cs" />
      <Compile Include="Assets\Scripts\Instakill.cs" />
      <Compile Include="Assets\Scripts\JumpPlataform.cs" />
