@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, ITakeDamage
 {
 
     private bool _IsFacingRight;
@@ -85,7 +85,7 @@ public class Player : MonoBehaviour
         transform.position = spawnPoint.position;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, GameObject instigator)
     {
         Instantiate(OuchEffect, transform.position, transform.rotation);
         Health -= damage;

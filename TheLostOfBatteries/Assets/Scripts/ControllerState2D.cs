@@ -16,7 +16,7 @@ public class ControllerState2D{
     public void Reset()
     {
         ColidindoBaixo = 
-            ColidindoCima = ColidindoDir = ColidindoBaixo = 
+            ColidindoCima = ColidindoDir = ColidindoEsq = 
             MovendoInclinadoBaixo = MovendoInclinadoCima = false;
         AnguloInclinacao = 0;
     }

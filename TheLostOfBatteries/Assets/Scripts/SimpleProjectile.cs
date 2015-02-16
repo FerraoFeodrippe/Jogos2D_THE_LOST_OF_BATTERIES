@@ -33,7 +33,6 @@ public class SimpleProjectile : Projectile, ITakeDamage {
             }
         }
 
-        DestroyProjectile();
     }
 
     protected override void OnCollideOther(Collider2D other)

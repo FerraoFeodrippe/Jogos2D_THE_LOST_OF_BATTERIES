@@ -22,7 +22,7 @@ public class GiveDamageToPlayer : MonoBehaviour {
         if (player == null)
             return;
 
-        player.TakeDamage(DamageToGive);
+        player.TakeDamage(DamageToGive, gameObject);
         var controller = player.GetComponent<CharacterController2D>();
         var totalVelocity = controller.Velocidade + _velocity;
 
