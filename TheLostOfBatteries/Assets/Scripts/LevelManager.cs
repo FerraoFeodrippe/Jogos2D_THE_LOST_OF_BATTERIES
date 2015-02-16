@@ -34,8 +34,6 @@ public class LevelManager : MonoBehaviour {
     public int BonusCutoffSeconds;
     public int BonusSecondMultiplier;
 
-
-
     public void Awake ()
     {
         Instance = this;
@@ -102,8 +100,6 @@ public class LevelManager : MonoBehaviour {
 
 	}
 
-
-
     public void NextPLayer()
     {
         StartCoroutine(NextPlayerCo());
@@ -112,10 +108,17 @@ public class LevelManager : MonoBehaviour {
     public IEnumerator NextPlayerCo()
     {
         var totalPlayer = Players.Count();
+        
         CurrentPlayer = (CurrentPlayer + 1) % totalPlayer;
         Player.Focused = false;
+        Player.GetComponentInChildren<SpriteRenderer>().sortingLayerName = "Player 2";
+        FindObjectsOfType<HealthBar>().Where(e => e.name == "Health Bar " + Player.name)
+            .FirstOrDefault().ChangeLayoutOrder("Player 2");
         Player = Players.ElementAt(CurrentPlayer);
         yield return new WaitForSeconds(0.1f);
+        FindObjectsOfType<HealthBar>().Where(e => e.name == "Health Bar " + Player.name)
+            .FirstOrDefault().ChangeLayoutOrder("Player");
+        Player.GetComponentInChildren<SpriteRenderer>().sortingLayerName = "Player";
         Camera.Player = Player.transform;
         Player.Focused = true;
     }

@@ -34,7 +34,8 @@ public class Player : MonoBehaviour
     {
         if (!Focused)
         {
-            _controller.SetHorizontalForce(0);
+            int fator = _IsFacingRight ? 1 : -1;
+            _normalizeHorizontalSpeed = fator * _normalizeHorizontalSpeed > 0 ? _normalizeHorizontalSpeed - 0.02f * fator : 0;
         }
         else
         {
@@ -45,9 +46,11 @@ public class Player : MonoBehaviour
                 int fator = _IsFacingRight ? 1 : -1;
                 _normalizeHorizontalSpeed = fator * _normalizeHorizontalSpeed > 0 ? _normalizeHorizontalSpeed - 0.02f * fator : 0;
             }
-            var movementFactor = _controller.State.NoChao ? SpeedAccelerationOnGrond : SpeedAccelerationInAir;
-            _controller.SetHorizontalForce(Mathf.Lerp(_controller.Velocidade.x, _normalizeHorizontalSpeed * MaxSpeed, Time.deltaTime * movementFactor));
         }
+
+        var movementFactor = _controller.State.NoChao ? SpeedAccelerationOnGrond : SpeedAccelerationInAir;
+        _controller.SetHorizontalForce(Mathf.Lerp(_controller.Velocidade.x, _normalizeHorizontalSpeed * MaxSpeed, Time.deltaTime * movementFactor));
+
         Animator.SetBool("IsGround", _controller.State.NoChao);
         Animator.SetBool("IsDead", IsDead);
         Animator.SetFloat("Speed", Mathf.Abs(_controller.Velocidade.x) / MaxSpeed);

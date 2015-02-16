@@ -9,6 +9,10 @@ public class HealthBar : MonoBehaviour {
     public Color MaxHealthColor = new Color(.6f, .6f, .1f, .7f);
     public Color MinHealthColor = new Color(.6f, .1f, .1f, .7f);
     
+    public void ChangeLayoutOrder(string nomeLayout)
+    {
+        ForegroundRederender.sortingLayerName = nomeLayout;
+    }
 
 	// Use this for initialization
 	void Start () {
