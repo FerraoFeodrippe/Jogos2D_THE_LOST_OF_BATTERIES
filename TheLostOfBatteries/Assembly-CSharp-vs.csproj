@@ -63,14 +63,19 @@
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\IFloatingTextPositioner.cs" />
      <Compile Include="Assets\Scripts\IPlayerRespawnListener.cs" />
+     <Compile Include="Assets\Scripts\ITakeDamage.cs" />
      <Compile Include="Assets\Scripts\Instakill.cs" />
      <Compile Include="Assets\Scripts\JumpPlataform.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\ObjectsPointToGet.cs" />
      <Compile Include="Assets\Scripts\ParalexController.cs" />
      <Compile Include="Assets\Scripts\PathDefination.cs" />
+     <Compile Include="Assets\Scripts\PathedProjectile.cs" />
+     <Compile Include="Assets\Scripts\PathedProjectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\SeguirCaminho.cs" />
+     <Compile Include="Assets\Scripts\SimpleProjectile.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
