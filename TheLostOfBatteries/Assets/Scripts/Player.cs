@@ -16,6 +16,7 @@ public class Player : MonoBehaviour, ITakeDamage
     public Projectile Projectile;
     public float FireRate;
     public Transform ProjectileFireLocation;
+    public AudioClip PlayerPunchSound;
 
     private Animator Animator;
     public bool Focused;
@@ -87,6 +88,7 @@ public class Player : MonoBehaviour, ITakeDamage
 
     public void TakeDamage(int damage, GameObject instigator)
     {
+        AudioSource.PlayClipAtPoint(PlayerPunchSound, transform.position);
         Instantiate(OuchEffect, transform.position, transform.rotation);
         Health -= damage;
 
@@ -137,14 +139,14 @@ public class Player : MonoBehaviour, ITakeDamage
     {
         if (_canFireIn > 0)
             return;
-
+        AudioSource.PlayClipAtPoint(PlayerPunchSound, transform.position);
         Animator.SetTrigger("Punch");
         var direction = _IsFacingRight ? Vector2.right : -Vector2.right;
 
         var projectile = (Projectile)Instantiate(Projectile, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
         projectile.Initialize(gameObject, direction, _controller.Velocidade);
 
-      
+
 
         _canFireIn = FireRate;
     }
