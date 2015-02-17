@@ -17,7 +17,6 @@ public class FromWorldPointTextPositioner : IFloatingTextPositioner {
         _timeToLive = timeToLive;
         _speed = speed;
 
-
     }
 
     public bool GetPosition(ref Vector2 position, GUIContent content, Vector2 size)

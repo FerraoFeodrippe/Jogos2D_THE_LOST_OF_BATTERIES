@@ -31,7 +31,6 @@ public class FloatingText : MonoBehaviour {
         }
 
         GUI.Label(new Rect(position.x, position.y, contentSize.x, contentSize.y), _content, Style);
-
     }
 
 }

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AutoDestroyParticleSystem.cs" />
+     <Compile Include="Assets\Scripts\BallonText.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CenteredTextPosition.cs" />
      <Compile Include="Assets\Scripts\CharacterController2D.cs" />
@@ -61,6 +62,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GiveDamageToPlayer.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\IBallonTextPositioner.cs" />
      <Compile Include="Assets\Scripts\IFloatingTextPositioner.cs" />
      <Compile Include="Assets\Scripts\IPlayerRespawnListener.cs" />
      <Compile Include="Assets\Scripts\ITakeDamage.cs" />
@@ -77,6 +79,7 @@
      <Compile Include="Assets\Scripts\SeguirCaminho.cs" />
      <Compile Include="Assets\Scripts\SimpleEnemyAI.cs" />
      <Compile Include="Assets\Scripts\SimpleProjectile.cs" />
+     <Compile Include="Assets\Scripts\SpeakerBallon.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

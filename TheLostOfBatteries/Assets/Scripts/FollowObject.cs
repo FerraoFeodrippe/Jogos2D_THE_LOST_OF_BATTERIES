@@ -7,6 +7,7 @@ public class FollowObject : MonoBehaviour {
 
     public void Update()
     {
-        transform.position = Following.transform.position + (Vector3)Offset;
+        transform.position = new Vector3(Following.position.x, Following.position.y, 0 )
+        + (Vector3)Offset;
     }
 }

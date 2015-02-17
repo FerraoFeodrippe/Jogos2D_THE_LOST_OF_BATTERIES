@@ -33,10 +33,22 @@ public class Player : MonoBehaviour, ITakeDamage
         Animator = GetComponentInChildren<Animator>();
         _IsFacingRight = transform.localScale.x > 0;
         Health = MaxHealth;
+
     }
+
+    public void Start()
+    {
+        string fala = "Ola, meu nome é valdemir, quer ser meu amigo? Sou sobrinho de Leo, lo phodão.Gostaria de lembrar a todos que amo Bruna e que já dei para túlio. Ele adorou, por sinal.";
+        BallonText.Show(fala, "LabelBallonSpeak", new SpeakerBallon(Camera.main, transform, 20));
+    }
+
+
 
     public void Update()
     {
+
+
+
         _canFireIn -= Time.deltaTime;
 
         if (!Focused)
@@ -99,7 +111,7 @@ public class Player : MonoBehaviour, ITakeDamage
 
     private void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) && Application.loadedLevelName != "start")
         {
             _normalizeHorizontalSpeed = 0;
             LevelManager.Instance.NextPLayer();
@@ -128,7 +140,7 @@ public class Player : MonoBehaviour, ITakeDamage
             _controller.Jump();
         }
 
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X) && Application.loadedLevelName != "start")
         {
             FireProjectile();
         }

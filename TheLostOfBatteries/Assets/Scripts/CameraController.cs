@@ -4,6 +4,9 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 
     public Transform Player;
+    public Transform[] ObjectsToMove;
+    public float ObjectsOffsetX;
+    public float ObjectsOffsetY;
 
     public Vector2 Margin, Smoothing;
 
@@ -38,7 +41,15 @@ public class CameraController : MonoBehaviour {
         x = Mathf.Clamp(x, _min.x + cameraHalfWidth, _max.x - cameraHalfWidth);
         y = Mathf.Clamp(y, _min.y + camera.orthographicSize, _max.y - camera.orthographicSize);
 
-        transform.position = new Vector3(x, y, transform.position.z);
 
+        for (int i = 0; i < ObjectsToMove.Length; i++ )
+        {
+            var transformObj = ObjectsToMove[i];
+            transformObj.transform.position = new Vector3(x + ObjectsOffsetX, y + ObjectsOffsetY,0);
+        }
+
+        transform.position = new Vector3(x, y, transform.position.z);
     }
+
+    
 }
