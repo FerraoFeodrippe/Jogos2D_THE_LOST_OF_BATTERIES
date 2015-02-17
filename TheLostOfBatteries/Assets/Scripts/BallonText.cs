@@ -1,52 +1,55 @@
 ﻿using System.Collections;
 using UnityEngine;
+using System.Linq;
 
 public class BallonText : MonoBehaviour
 {
 
     private static readonly GUISkin Skin = Resources.Load<GUISkin>("Game Skin");
-    public static BallonText Show(string text, string style, IBallonTextPositioner positioner)
+    public static BallonText Show(string text, string style, IBallonTextPositioner positioner, NPC_Speak npcSpeaker= null)
     {
         var go = new GameObject("Ballon Text");
         var ballonText = go.AddComponent<BallonText>();
         ballonText.Style = Skin.GetStyle(style);
+        ballonText.StyleArea = Skin.GetStyle("BallonSpeak");
         ballonText._positioner = positioner;
-        ballonText._content = new GUIContent(text+"\n\n\n\n");
-        
+        ballonText._content = new GUIContent(text);
+        ballonText._npc_speaker = npcSpeaker;
         return ballonText;
     }
 
     private GUIContent _content;
     private IBallonTextPositioner _positioner;
+    private Vector2 scroll;
+    private NPC_Speak _npc_speaker;
 
     public string Text { get { return _content.text; } set { _content.text = value; } }
     public GUIStyle Style { get; set; }
-    private Vector2 scroll;
-    private Vector2 position;
-    private Vector2 contentSize;
-
-    public void DrawBallon(Vector2 position, Vector2 contentSize)
-    {
-        GUILayout.BeginArea(new Rect(position.x, position.y, contentSize.x, contentSize.y), Skin.GetStyle("BallonSpeak"));
-        scroll = GUILayout.BeginScrollView(scroll, GUIStyle.none, GUIStyle.none, GUILayout.Width(contentSize.x), GUILayout.Height(contentSize.y));
-
-        {
-
-             GUILayout.Label(_content);
-
-        }
-        GUILayout.EndScrollView();
-        GUILayout.EndArea();
-    }
+    public GUIStyle StyleArea { get; set; }
+    
+    private float y = -30;
 
     public void OnGUI()
     {
-        contentSize = Style.CalcSize(_content);
+        var position = new Vector2();
+        var contentSize = Style.CalcSize(_content);
         if (!_positioner.GetPosition(ref position, ref scroll, contentSize))
         {
             Destroy(gameObject);
+
+            if (_npc_speaker != null)
+                _npc_speaker.IsSpeaking = false;
+
+            return;
         }
-        DrawBallon(position, contentSize);
+
+        GUILayout.BeginArea(new Rect(position.x, position.y, contentSize.x, contentSize.y), StyleArea);
+        {
+            GUI.Label(new Rect(0, -y, contentSize.x, contentSize.y), _content, Style);
+        }
+        GUILayout.EndArea();
+
+        y += Time.deltaTime * 4;
     }
 
 

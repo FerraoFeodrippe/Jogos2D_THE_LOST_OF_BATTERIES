@@ -22,6 +22,7 @@ public class Player : MonoBehaviour, ITakeDamage
     public bool Focused;
     public int PosPlayerSelect;
 
+    public bool IsNearToNpc { get; set; }
     public int Health { get; private set; }
     public bool IsDead { get; private set; }
 
@@ -39,8 +40,9 @@ public class Player : MonoBehaviour, ITakeDamage
     public void Start()
     {
         string fala = "Ola, meu nome é valdemir, quer ser meu amigo? Sou sobrinho de Leo, lo phodão.Gostaria de lembrar a todos que amo Bruna e que já dei para túlio. Ele adorou, por sinal.";
-        BallonText.Show(fala, "LabelBallonSpeak", new SpeakerBallon(Camera.main, transform, 20));
+        BallonText.Show(fala, "LabelBallonSpeak", new SpeakerBallon(Camera.main, transform, fala.Length * 0.15f));
     }
+
 
 
 
@@ -142,7 +144,8 @@ public class Player : MonoBehaviour, ITakeDamage
 
         if (Input.GetKeyDown(KeyCode.X) && Application.loadedLevelName != "start")
         {
-            FireProjectile();
+            if (!IsNearToNpc)
+                FireProjectile();
         }
 
     }

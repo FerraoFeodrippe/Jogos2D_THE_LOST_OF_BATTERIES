@@ -8,7 +8,7 @@ public class SpeakerBallon : IBallonTextPositioner {
     private float _timeToLive;
     private float _yOffset;
     private Transform _gameObject;
-    private Vector2 _tempScroll;
+    //private Vector2 _tempScroll;
 
     public SpeakerBallon(Camera camera, Transform gameObject, float timeToLive)
     {
@@ -16,19 +16,18 @@ public class SpeakerBallon : IBallonTextPositioner {
         _worldPosition = gameObject.position;
         _timeToLive = timeToLive;
         _gameObject = gameObject;
-        _yOffset =50;
-        _tempScroll = new Vector2(0, -Mathf.Infinity);
+        _yOffset =Screen.height/10;
+        //_tempScroll = new Vector2(0, -Mathf.Infinity);
 
     }
 
 
     public bool GetPosition(ref Vector2 position, ref Vector2 posScroll, Vector2 size)
     {
-        if ( Mathf.Abs(posScroll.y - _tempScroll.y) <= 0.055f ) 
+        if ((_timeToLive -= Time.deltaTime) <= 0)
+        {
             return false;
-
-        _tempScroll = new Vector2(posScroll.x, posScroll.y); 
-          posScroll +=  4* Vector2.up * Time.deltaTime;
+        }
 
         var screenPosition = _camera.WorldToScreenPoint(_gameObject.position);
         position.x = screenPosition.x - (size.x/2);
