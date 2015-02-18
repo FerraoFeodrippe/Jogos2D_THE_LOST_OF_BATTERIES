@@ -6,6 +6,7 @@ public class NPC_Speak : MonoBehaviour
     public int []NumberSpeakSequence;
     public bool IsSpeaking { get; set; }
     public bool IsNearToNpc { get; set; }
+    public bool HaveSpeaked { get; set; }
 
     private int _sequenceActual;
     private volatile Player _playerOwn;
@@ -17,7 +18,8 @@ public class NPC_Speak : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X))
         {
             IsSpeaking= true;
-            var fala = Scripts_Speakers.GetLeoTextAt(NumberSpeakSequence[_sequenceActual]);
+            BaseLevelActions.Instance.OnTriggerSpeaked();
+            var fala = Scripts_Speakers.GetTextAt(NumberSpeakSequence[_sequenceActual]);
             if (_sequenceActual +1 < NumberSpeakSequence.Count())
                 _sequenceActual++;
             BallonText.Show(fala, "LabelBallonSpeak",
@@ -31,8 +33,7 @@ public class NPC_Speak : MonoBehaviour
         if (_playerOwn == null || IsNearToNpc)
             return;
         _playerOwn.IsNearToNpc = true;
-        Debug.Log("Perto do NPC=" + _playerOwn.IsNearToNpc);
-        Debug.Log(IsSpeaking);
+     
 
         IsNearToNpc = true;
 
@@ -44,7 +45,6 @@ public class NPC_Speak : MonoBehaviour
         if (_playerOwn == null || !IsNearToNpc)
             return;
         _playerOwn.IsNearToNpc = false ;
-        Debug.Log("Perto do NPC=" + _playerOwn.IsNearToNpc);
         IsNearToNpc = false;
 
     }

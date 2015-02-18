@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 public class Player : MonoBehaviour, ITakeDamage
 {
@@ -19,19 +20,23 @@ public class Player : MonoBehaviour, ITakeDamage
     public AudioClip PlayerPunchSound;
 
     private Animator Animator;
+    private Animator AnimatorInteractive;
     public bool Focused;
     public int PosPlayerSelect;
 
     public bool IsNearToNpc { get; set; }
+    public bool IsNearToInteractiveObject { get; set; }
     public int Health { get; private set; }
     public bool IsDead { get; private set; }
+    public bool CanInput { get; set; }
 
     private float _canFireIn;
 
     public void Awake()
     {
         _controller = GetComponent<CharacterController2D>();
-        Animator = GetComponentInChildren<Animator>();
+        Animator = GetComponentsInChildren<Animator>().Where(e=>  e.name == "Animação").FirstOrDefault();
+        AnimatorInteractive = GetComponentsInChildren<Animator>().Where(e => e.name == "Interrogation").FirstOrDefault();
         _IsFacingRight = transform.localScale.x > 0;
         Health = MaxHealth;
 
@@ -75,6 +80,8 @@ public class Player : MonoBehaviour, ITakeDamage
         Animator.SetBool("IsGround", _controller.State.NoChao);
         Animator.SetBool("IsDead", IsDead);
         Animator.SetFloat("Speed", Mathf.Abs(_controller.Velocidade.x) / MaxSpeed);
+        AnimatorInteractive.GetComponent<SpriteRenderer>().enabled = IsNearToInteractiveObject;
+        AnimatorInteractive.SetBool("IsInterrogation", IsNearToInteractiveObject);
     }
 
     public void Kill()
@@ -113,6 +120,9 @@ public class Player : MonoBehaviour, ITakeDamage
 
     private void HandleInput()
     {
+        if (!CanInput)
+            return;
+
         if (Input.GetKeyDown(KeyCode.A) && Application.loadedLevelName != "start")
         {
             _normalizeHorizontalSpeed = 0;
@@ -169,6 +179,8 @@ public class Player : MonoBehaviour, ITakeDamage
     private void Flip()
     {
         transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        AnimatorInteractive.transform.localScale = new Vector3(-AnimatorInteractive.transform.localScale.x, 
+            AnimatorInteractive.transform.localScale.y, AnimatorInteractive.transform.localScale.z);
         _IsFacingRight = transform.localScale.x > 0;
     }
 

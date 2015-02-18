@@ -67,7 +67,10 @@
      <Compile Include="Assets\Scripts\IPlayerRespawnListener.cs" />
      <Compile Include="Assets\Scripts\ITakeDamage.cs" />
      <Compile Include="Assets\Scripts\Instakill.cs" />
+     <Compile Include="Assets\Scripts\InteractiveObject.cs" />
      <Compile Include="Assets\Scripts\JumpPlataform.cs" />
+     <Compile Include="Assets\Scripts\LevelActions\BaseLevelActions.cs" />
+     <Compile Include="Assets\Scripts\LevelActions\StartLevelActions.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\NPC_Speak.cs" />
      <Compile Include="Assets\Scripts\ObjectsPointToGet.cs" />
