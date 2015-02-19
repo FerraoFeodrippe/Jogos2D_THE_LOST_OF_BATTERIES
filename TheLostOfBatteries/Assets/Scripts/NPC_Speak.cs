@@ -7,6 +7,13 @@ public class NPC_Speak : MonoBehaviour
     public bool IsSpeaking { get; set; }
     public bool IsNearToNpc { get; set; }
     public bool HaveSpeaked { get; set; }
+    public Animator Animator { get; set; }
+ 
+    public void Awake()
+    {
+        Animator = GetComponent<Animator>();
+    }
+
 
     private int _sequenceActual;
     private volatile Player _playerOwn;
@@ -29,6 +36,8 @@ public class NPC_Speak : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        BaseLevelActions.Instance.NPCOnCollider(other);
+            
         _playerOwn = other.GetComponent<Player>();
         if (_playerOwn == null || IsNearToNpc)
             return;

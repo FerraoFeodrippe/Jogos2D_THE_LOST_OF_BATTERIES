@@ -9,6 +9,11 @@ public class BaseLevelActions:MonoBehaviour
         Instance = this;
     }
 
+    public virtual void DoAction(string nome) { }
     public virtual void OnTriggerSpeaked(){}
+    public virtual void OnTriggerInteracted() {}
+    public virtual void PlayerOnCollider(Collider2D other) { }
+    public virtual void NPCOnCollider(Collider2D other) { }
+    public virtual void SetInputPlayer(bool pode) { }
 }
 

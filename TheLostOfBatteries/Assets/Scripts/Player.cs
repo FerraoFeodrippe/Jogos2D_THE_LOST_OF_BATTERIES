@@ -19,7 +19,7 @@ public class Player : MonoBehaviour, ITakeDamage
     public Transform ProjectileFireLocation;
     public AudioClip PlayerPunchSound;
 
-    private Animator Animator;
+    public Animator Animator { get; set; }
     private Animator AnimatorInteractive;
     public bool Focused;
     public int PosPlayerSelect;
@@ -42,23 +42,11 @@ public class Player : MonoBehaviour, ITakeDamage
 
     }
 
-    public void Start()
-    {
-        string fala = "Ola, meu nome é valdemir, quer ser meu amigo? Sou sobrinho de Leo, lo phodão.Gostaria de lembrar a todos que amo Bruna e que já dei para túlio. Ele adorou, por sinal.";
-        BallonText.Show(fala, "LabelBallonSpeak", new SpeakerBallon(Camera.main, transform, fala.Length * 0.15f));
-    }
-
-
-
-
     public void Update()
     {
-
-
-
         _canFireIn -= Time.deltaTime;
 
-        if (!Focused)
+        if (!Focused || !CanInput)
         {
             int fator = _IsFacingRight ? 1 : -1;
             _normalizeHorizontalSpeed = fator * _normalizeHorizontalSpeed > 0 ? _normalizeHorizontalSpeed - Time.deltaTime * fator : 0;
@@ -182,6 +170,12 @@ public class Player : MonoBehaviour, ITakeDamage
         AnimatorInteractive.transform.localScale = new Vector3(-AnimatorInteractive.transform.localScale.x, 
             AnimatorInteractive.transform.localScale.y, AnimatorInteractive.transform.localScale.z);
         _IsFacingRight = transform.localScale.x > 0;
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        BaseLevelActions.Instance.PlayerOnCollider(other);
+
     }
 
 }

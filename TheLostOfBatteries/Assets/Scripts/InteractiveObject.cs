@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
 using System.Linq;
+using System.Collections;
 
 public class InteractiveObject : MonoBehaviour
 {
+
+    public AudioClip Sound;
+
     public bool IsInteracting { get; set; }
     public bool IsNearToNpc { get; set; }
+    
 
     private volatile Player _playerOwn;
     public void LateUpdate()
@@ -14,8 +19,13 @@ public class InteractiveObject : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
+            BaseLevelActions.Instance.DoAction(name);
+         //   BaseLevelActions.Instance.SetInputPlayer(false);
             IsInteracting = true;
-          
+            if (Sound != null)
+                AudioSource.PlayClipAtPoint(Sound, Vector3.zero);
+            StartCoroutine(OnAudioEnd());
+            
         }
     }
 
@@ -39,6 +49,14 @@ public class InteractiveObject : MonoBehaviour
         _playerOwn.IsNearToInteractiveObject = false;
         IsNearToNpc = false;
 
+    }
+
+    public IEnumerator OnAudioEnd()
+    {
+        if (Sound != null)
+            yield return new WaitForSeconds(Sound.length);
+        BaseLevelActions.Instance.OnTriggerInteracted();
+        IsInteracting = false;
     }
 
 }

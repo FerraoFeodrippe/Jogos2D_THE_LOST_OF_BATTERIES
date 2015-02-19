@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\Instakill.cs" />
      <Compile Include="Assets\Scripts\InteractiveObject.cs" />
      <Compile Include="Assets\Scripts\JumpPlataform.cs" />
+     <Compile Include="Assets\Scripts\LevelActions\AfterStartLevelActions.cs" />
      <Compile Include="Assets\Scripts\LevelActions\BaseLevelActions.cs" />
      <Compile Include="Assets\Scripts\LevelActions\StartLevelActions.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
@@ -80,6 +81,7 @@
      <Compile Include="Assets\Scripts\PathedProjectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\SceneComputerScreen\ComputerScreen.cs" />
      <Compile Include="Assets\Scripts\Scripts_Speakers.cs" />
      <Compile Include="Assets\Scripts\SeguirCaminho.cs" />
      <Compile Include="Assets\Scripts\SimpleEnemyAI.cs" />

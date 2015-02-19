@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 32a40e0ec680760458ac0f82bcc89bfa
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: computerscreen
+    21300002: computerscreen_0
+    21300004: computerscreen_1
+    21300006: computerscreen_2
+    21300008: computerscreen_3
+    21300010: computerscreen_4
+    21300012: computerscreen_5
+    21300014: computerscreen_6
+    21300016: computerscreen_7
+    21300018: computerscreen_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: computerscreen_0
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 331
+        width: 831
+        height: 548
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: computerscreen_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 560
+        width: 446
+        height: 278
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: computerscreen_2
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 163
+        width: 821
+        height: 163
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: computerscreen_3
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 215
+        width: 219
+        height: 337
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: computerscreen_4
+      rect:
+        serializedVersion: 2
+        x: 1625
+        y: 213
+        width: 212
+        height: 340
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: computerscreen_5
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 694
+        width: 435
+        height: 139
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: computerscreen_6
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 566
+        width: 439
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: computerscreen_7
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 222
+        width: 223
+        height: 336
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: computerscreen_8
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 218
+        width: 222
+        height: 342
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

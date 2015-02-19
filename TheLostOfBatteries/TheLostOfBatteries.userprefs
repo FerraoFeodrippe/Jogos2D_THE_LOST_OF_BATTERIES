@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LevelActions\LevelActions.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SceneComputerScreen\ComputerScreen.cs">
     <Files>
-      <File FileName="Assets\Scripts\LevelActions\LevelActions.cs" Line="3" Column="1" />
+      <File FileName="Assets\Scripts\CharacterController2D.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneComputerScreen\ComputerScreen.cs" Line="27" Column="1" />
+      <File FileName="Assets\Scripts\LevelActions\StartLevelActions.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
