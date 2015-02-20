@@ -1,9 +1,8 @@
 fileFormatVersion: 2
-guid: 9adc77926d97eb1448db954ce1fef19c
+guid: 1e98e61ffcb5c6c4d96919a980c382a0
 TextureImporter:
   fileIDToRecycleName:
-    21300000: treeLeftRight
-    21300002: treeLeftRight_0
+    21300000: GUO DOWN BG
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -27,13 +26,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -44,16 +43,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: treeLeftRight_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 445
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 

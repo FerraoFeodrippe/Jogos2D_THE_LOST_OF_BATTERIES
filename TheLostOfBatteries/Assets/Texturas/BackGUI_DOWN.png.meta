@@ -1,9 +1,8 @@
 fileFormatVersion: 2
-guid: 9adc77926d97eb1448db954ce1fef19c
+guid: e8691ba0fbc1fb9429d576fd1e2f6126
 TextureImporter:
   fileIDToRecycleName:
-    21300000: treeLeftRight
-    21300002: treeLeftRight_0
+    21300000: BackGUI_DOWN
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -33,10 +32,10 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
+  alignment: 1
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
@@ -44,16 +43,6 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: treeLeftRight_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 445
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 

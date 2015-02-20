@@ -23,6 +23,7 @@ public class SimpleEnemyAI : MonoBehaviour, ITakeDamage, IPlayerRespawnListener 
 
     public void Update()
     {
+        Debug.Log("TEsTE");
         _controller.SetHorizontalForce(_direction.x * Speed);
 
         if ((_direction.x < 0 && _controller.State.ColidindoEsq) || (_direction.x > 0 && _controller.State.ColidindoDir))

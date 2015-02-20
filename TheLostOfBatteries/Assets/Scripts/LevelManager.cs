@@ -28,7 +28,7 @@ public class LevelManager : MonoBehaviour {
     private int _savedPoints;
 
     private IEnumerable<Player> Players;
-    private static int CurrentPlayer = 0;
+    private int CurrentPlayer = 0;
 
     public CheckPoint DebugSpawn;
     public int BonusCutoffSeconds;
@@ -148,5 +148,6 @@ public class LevelManager : MonoBehaviour {
         GameManager.Instance.ResetPoints(_savedPoints);
 
     }
+
 
 }

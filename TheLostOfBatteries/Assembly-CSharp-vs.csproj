@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\FromWorldPointTextPositioner.cs" />
      <Compile Include="Assets\Scripts\GameHud.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GiveDamageToEnemy.cs" />
      <Compile Include="Assets\Scripts\GiveDamageToPlayer.cs" />
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\IBallonTextPositioner.cs" />

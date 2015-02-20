@@ -31,6 +31,7 @@ public class Player : MonoBehaviour, ITakeDamage
     public bool CanInput { get; set; }
 
     private float _canFireIn;
+    private volatile bool _giveDamage;
 
     public void Awake()
     {
@@ -143,25 +144,52 @@ public class Player : MonoBehaviour, ITakeDamage
         if (Input.GetKeyDown(KeyCode.X) && Application.loadedLevelName != "start")
         {
             if (!IsNearToNpc)
-                FireProjectile();
+            {
+                if (Projectile != null)
+                    FireProjectile();
+                else
+                    Punch();
+            }
+                
         }
 
+    }
+
+    private void Punch()
+    {
+        if (_canFireIn > 0)
+            return;
+
+        Debug.Log(transform.collider2D.bounds.size);
+
+        //var enemy = FindObjectsOfType<Transform>().Where(e => e.tag == "Enemy" &&
+        //    Vector2.Distance(transform.collider2D.bounds.size, e.transform.collider2D.bounds.size) <= 1).OrderBy(e=> 
+        //        Vector2.Distance(transform.position, e.transform.position))
+        //    .FirstOrDefault();
+        Animator.SetTrigger("Punch");
+
+        if (!_giveDamage)
+            return;
+
+        AudioSource.PlayClipAtPoint(PlayerPunchSound, transform.position);
+        _canFireIn = FireRate;
     }
 
     private void FireProjectile()
     {
         if (_canFireIn > 0)
             return;
-        AudioSource.PlayClipAtPoint(PlayerPunchSound, transform.position);
-        Animator.SetTrigger("Punch");
+
         var direction = _IsFacingRight ? Vector2.right : -Vector2.right;
+        
+        Animator.SetTrigger("Punch");
 
         var projectile = (Projectile)Instantiate(Projectile, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
         projectile.Initialize(gameObject, direction, _controller.Velocidade);
 
-
-
         _canFireIn = FireRate;
+
+        
     }
 
     private void Flip()
@@ -176,6 +204,18 @@ public class Player : MonoBehaviour, ITakeDamage
     {
         BaseLevelActions.Instance.PlayerOnCollider(other);
 
+        if (other.tag == "Enemy")
+            _giveDamage = true;
+
     }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        BaseLevelActions.Instance.PlayerOnCollider(other);
+        _giveDamage = false;
+
+    }
+
+
 
 }

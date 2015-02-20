@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GiveDamageToPlayer : MonoBehaviour {
+public class GiveDamageToEnemy: MonoBehaviour {
 
     public int DamageToGive = 1;
 
@@ -18,11 +18,10 @@ public class GiveDamageToPlayer : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (!this.enabled)
-            return;
         var player = other.GetComponent<Player>();
         if (player == null)
             return;
+
         player.TakeDamage(DamageToGive, gameObject);
         var controller = player.GetComponent<CharacterController2D>();
         var totalVelocity = controller.Velocidade + _velocity;
