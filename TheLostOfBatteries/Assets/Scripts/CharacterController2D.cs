@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 
-public class CharacterController2D : MonoBehaviour {
+public class CharacterController2D : MonoBehaviour
+{
     private const float SkinWidth = 0.02f;
     private const int LimitesHorizontais = 8;
     private const int LimitesVerticais = 4;
@@ -13,9 +15,9 @@ public class CharacterController2D : MonoBehaviour {
 
     public ControllerState2D State { get; private set; }
     public Vector2 Velocidade { get { return _velocidade; } }
-    public bool PodePular 
-    { 
-        get 
+    public bool PodePular
+    {
+        get
         {
             if (Parameters.RestricoesPulo == ControllerParameters2D.PuloBehavior.Anywhere)
                 return _jumpIn < 0;
@@ -24,7 +26,7 @@ public class CharacterController2D : MonoBehaviour {
                 return State.NoChao;
 
             return false;
-        } 
+        }
     }
     public bool HandleCollisions { get; set; }
     public ControllerParameters2D Parameters { get { return _overrrideParameters ?? ValoresPadrao; } }
@@ -38,6 +40,7 @@ public class CharacterController2D : MonoBehaviour {
     private ControllerParameters2D _overrrideParameters;
     private float _jumpIn;
     private GameObject _lastStandingOn;
+    private bool _jumpUP;
 
 
     private Vector3
@@ -60,7 +63,6 @@ public class CharacterController2D : MonoBehaviour {
         _transform = transform;
         _localScale = transform.localScale;
         _boxCollider = GetComponent<BoxCollider2D>();
-      
 
         var collidionWidth = _boxCollider.size.x * Mathf.Abs(transform.localScale.x) - (2 * SkinWidth);
         _horizontalDistanceBetweenRays = collidionWidth / (LimitesVerticais - 1);
@@ -79,11 +81,11 @@ public class CharacterController2D : MonoBehaviour {
         _velocidade = force;
     }
 
-    public void SetHorizontalForce (float x)
+    public void SetHorizontalForce(float x)
     {
         _velocidade.x = x;
     }
-    public void Setverticalforce (float y)
+    public void Setverticalforce(float y)
     {
         _velocidade.y = y;
     }
@@ -106,7 +108,7 @@ public class CharacterController2D : MonoBehaviour {
     {
         var wasGrounded = State.ColidindoBaixo;
         State.Reset();
-        
+
         if (HandleCollisions)
         {
             HandlePlataforms();
@@ -114,14 +116,15 @@ public class CharacterController2D : MonoBehaviour {
 
             if (deltaMoviment.y < 0 && wasGrounded)
                 HandleInclinacaoVertical(ref deltaMoviment);
-
-            if (Mathf.Abs(deltaMoviment.x) > 0.001f)
+            if (Mathf.Abs(deltaMoviment.x) > 0.001f && !_jumpUP)
                 MoverHorizontal(ref deltaMoviment);
-
-            MoverVertical(ref deltaMoviment);
-
-            CorrectHorizontalPlacement(ref deltaMoviment, true);
-            CorrectHorizontalPlacement(ref deltaMoviment, false);
+            if (deltaMoviment.y < 0)
+            {
+                MoverVertical(ref deltaMoviment);
+                CorrectHorizontalPlacement(ref deltaMoviment, true);
+                CorrectHorizontalPlacement(ref deltaMoviment, false);
+            }
+         
         }
 
         _transform.Translate(deltaMoviment, Space.World);
@@ -197,10 +200,10 @@ public class CharacterController2D : MonoBehaviour {
         var rayDirection = isRight ? Vector2.right : -Vector2.right;
         var offset = 0f;
 
-        for (var i=1; i< LimitesHorizontais -1; i++)
+        for (var i = 1; i < LimitesHorizontais - 1; i++)
         {
-            var rayVector = new Vector2(deltaMoviment.x +  rayOrigin.x, deltaMoviment.y + rayOrigin.y + (i * _verticalDistanceBetweenRays));
-            //Debug.DrawRay(rayVector, rayDirection * halfWidth, isRight ? Color.cyan : Color.magenta);
+            var rayVector = new Vector2(deltaMoviment.x + rayOrigin.x, deltaMoviment.y + rayOrigin.y + (i * _verticalDistanceBetweenRays));
+           // Debug.DrawRay(rayVector, rayDirection * halfWidth, isRight ? Color.cyan : Color.magenta);
             var raycastHit = Physics2D.Raycast(rayVector, rayDirection, halfWidth, PLataformaMark);
             if (!raycastHit)
                 continue;
@@ -212,8 +215,8 @@ public class CharacterController2D : MonoBehaviour {
 
     private void CalculateRaysOrigins()
     {
-        var size = new Vector2(_boxCollider.size.x * Mathf.Abs(_localScale.x), _boxCollider.size.y * Mathf.Abs(_localScale.y)) / 2 ;
-        var center = new Vector2(_boxCollider.center.x * _localScale.x, _boxCollider.center.y * _localScale.y) ;
+        var size = new Vector2(_boxCollider.size.x * Mathf.Abs(_localScale.x), _boxCollider.size.y * Mathf.Abs(_localScale.y)) / 2;
+        var center = new Vector2(_boxCollider.center.x * _localScale.x, _boxCollider.center.y * _localScale.y);
 
         _raycastTopLeft = _transform.position + new Vector3(center.x - size.x + SkinWidth, center.y + size.y - SkinWidth);
         _raycastBottomRight = _transform.position + new Vector3(center.x + size.x - SkinWidth, center.y - size.y + SkinWidth);
@@ -222,12 +225,10 @@ public class CharacterController2D : MonoBehaviour {
 
     private void MoverHorizontal(ref Vector2 deltaMoviment)
     {
-
         var isGoingRight = deltaMoviment.x > 0;
         var rayDistance = Mathf.Abs(deltaMoviment.x) + SkinWidth;
         var raydirection = isGoingRight ? Vector2.right : -Vector2.right;
         var rayOrigin = isGoingRight ? _raycastBottomRight : _raycastBottomLeft;
-
 
         for (var i = 0; i < LimitesHorizontais; i++)
         {
@@ -252,7 +253,7 @@ public class CharacterController2D : MonoBehaviour {
             else
             {
                 deltaMoviment.x += SkinWidth;
-                State.ColidindoEsq =  true;
+                State.ColidindoEsq = true;
             }
 
             if (rayDistance < SkinWidth + 0.001f)
@@ -289,9 +290,9 @@ public class CharacterController2D : MonoBehaviour {
                 if (verticalDistanceToHit < standingOnDistance)
                 {
                     standingOnDistance = verticalDistanceToHit;
-                    StandingOn = rayCastHit.collider.gameObject; 
+                    StandingOn = rayCastHit.collider.gameObject;
                 }
-                
+
             }
 
             deltaMoviment.y = rayCastHit.point.y - rayVector.y;
@@ -299,8 +300,10 @@ public class CharacterController2D : MonoBehaviour {
 
             if (isGoingUp)
             {
+
                 deltaMoviment.y -= SkinWidth;
                 State.ColidindoCima = true;
+
             }
             else
             {
@@ -314,7 +317,7 @@ public class CharacterController2D : MonoBehaviour {
             if (rayDistance < SkinWidth + .0001f)
                 break;
         }
-        
+
     }
 
     private void HandleInclinacaoVertical(ref Vector2 deltaMoviment)
@@ -329,7 +332,7 @@ public class CharacterController2D : MonoBehaviour {
         var rayCastHit = Physics2D.Raycast(slopeRayVector, direction, slopeDistance, PLataformaMark);
         if (!rayCastHit)
             return;
-        
+
         var isMovingDownSlope = Mathf.Sign(rayCastHit.normal.x) == Mathf.Sign(deltaMoviment.x);
         if (!isMovingDownSlope)
             return;
@@ -346,7 +349,7 @@ public class CharacterController2D : MonoBehaviour {
     private bool HandleInclinacaoHorizontal(ref Vector2 deltaMoviment, float angle, bool isGoingRight)
     {
         if (Mathf.RoundToInt(angle) == 90)
-            return false;  
+            return false;
 
         if (angle > Parameters.AlguloLimite)
         {
@@ -359,14 +362,15 @@ public class CharacterController2D : MonoBehaviour {
 
         deltaMoviment.x += isGoingRight ? -SkinWidth : SkinWidth;
         deltaMoviment.y = Mathf.Abs(Mathf.Tan(angle * Mathf.Deg2Rad) * deltaMoviment.x);
-        State.MovendoInclinadoCima= true;
+        State.MovendoInclinadoCima = true;
         State.ColidindoBaixo = true;
-        return true;    
+        return true;
     }
 
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        _jumpUP = other.gameObject.layer == 14;
         var parameters = other.gameObject.GetComponent<ControllerPhsyicsVolume2D>();
         if (parameters == null)
             return;
@@ -376,6 +380,7 @@ public class CharacterController2D : MonoBehaviour {
 
     public void OnTriggerExit2D(Collider2D other)
     {
+
         var parameters = other.gameObject.GetComponent<ControllerPhsyicsVolume2D>();
         if (parameters == null)
             return;

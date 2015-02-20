@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\ControllerParameters2D.cs" />
      <Compile Include="Assets\Scripts\ControllerPhsyicsVolume2D.cs" />
      <Compile Include="Assets\Scripts\ControllerState2D.cs" />
+     <Compile Include="Assets\Scripts\ExtraPlayerFunctions\UpArms.cs" />
      <Compile Include="Assets\Scripts\FloatingText.cs" />
      <Compile Include="Assets\Scripts\FollowObject.cs" />
      <Compile Include="Assets\Scripts\FromWorldPointTextPositioner.cs" />

@@ -36,13 +36,13 @@ public class Player : MonoBehaviour, ITakeDamage
     private volatile bool _giveDamage;
     private volatile Collider2D _currentEnemy;
     private volatile IList<Collider2D> _enemiesToHit;
-    private volatile Dictionary<string,IEnumerator> _routines;
+    private volatile Dictionary<string, IEnumerator> _routines;
     private volatile Dictionary<string, bool> _listGiveDamage;
 
     public void Awake()
     {
         _enemiesToHit = new List<Collider2D>();
-        _routines = new Dictionary<string,IEnumerator>();
+        _routines = new Dictionary<string, IEnumerator>();
         _listGiveDamage = new Dictionary<string, bool>();
         _controller = GetComponent<CharacterController2D>();
         Animator = GetComponentsInChildren<Animator>().Where(e => e.name == "Animação").FirstOrDefault();
@@ -171,17 +171,22 @@ public class Player : MonoBehaviour, ITakeDamage
 
         Animator.SetTrigger("Punch");
 
-        _currentEnemy = _enemiesToHit.Where(e=> _listGiveDamage[e.name]).OrderBy(e => 
+        _currentEnemy = _enemiesToHit.Where(e => _listGiveDamage[e.name]).OrderBy(e =>
             Mathf.Abs(collider2D.transform.position.x - e.transform.position.x)).FirstOrDefault();
 
         if (_currentEnemy == null || _enemiesToHit.Count() == 0)
             return;
 
         //TODO tratar toda lapada, como tirar daqui aqui embaixo
-        
+
         //_currentEnemy.name = _currentEnemy.name + " X ";
-        Debug.Log("Inimigo apanhou: " + _currentEnemy.name);
+        //Debug.Log("Inimigo apanhou: " + _currentEnemy.name);
         AudioSource.PlayClipAtPoint(PlayerPunchSound, transform.position);
+        _currentEnemy.GetComponent<SimpleEnemyAI>().TakeDamage(1, gameObject);
+        StopCoroutine(_routines[_currentEnemy.name]);
+        _enemiesToHit.Remove(_currentEnemy);
+        _routines[_currentEnemy.name] = null;
+        _listGiveDamage[_currentEnemy.name] = false;
         _canFireIn = FireRate;
 
     }
@@ -227,7 +232,6 @@ public class Player : MonoBehaviour, ITakeDamage
             var newRoutine = HitEnemy(other);
             _routines[other.name] = newRoutine;
             StartCoroutine(newRoutine);
-            
         }
 
 
@@ -240,19 +244,19 @@ public class Player : MonoBehaviour, ITakeDamage
         if (other.tag == "Enemy")
         {
             var removeRoutive = _routines[other.name];
-           StopCoroutine(removeRoutive);
-           _enemiesToHit.Remove(other);
-           _routines[other.name] = null;
-           Debug.Log(name + ": COMEÇA");
-           Debug.Log(other.name + " Removido");
-           foreach (var routine in _routines)
-           {
-               Debug.Log("     REM:" + routine.Value);
-           }
-           Debug.Log(name + ":TERMINA");
+            StopCoroutine(removeRoutive);
+            _enemiesToHit.Remove(other);
+            _routines[other.name] = null;
+            _listGiveDamage[other.name] = false;
+            //Debug.Log(name + ": COMEÇA");
+            //Debug.Log(other.name + " Removido");
+            //foreach (var routine in _routines)
+            //{
+            //    Debug.Log("     REM:" + routine.Value);
+            //}
+            //Debug.Log(name + ":TERMINA");
 
             
-            _giveDamage = false;
             //Debug.Log(name + ": COMEÇA");
             //Debug.Log(other.name + " Removido");
             //foreach(var enemy in _enemiesToHit  )
@@ -282,26 +286,24 @@ public class Player : MonoBehaviour, ITakeDamage
 
         while (true)
         {
-
-            var limitePlayer = _IsFacingRight ?
-collider2D.transform.position.x + collider2D.bounds.size.x / 2 :
-collider2D.transform.position.x - collider2D.bounds.size.x / 2;
-            var limiteEnimy = _IsFacingRight ?
-                (other.transform.position.x + other.bounds.size.x / 2) :
-                (other.transform.position.x - other.bounds.size.x / 2);
-
-            Debug.DrawLine(transform.position, other.transform.position, Color.red);
-            Debug.DrawLine(other.transform.position, new Vector3(limiteEnimy, other.transform.position.y, 0)
-                , Color.blue);
-            Debug.DrawLine(transform.position, new Vector3(limitePlayer, transform.position.y, 0)
-         , Color.yellow);
-
             var direction = transform.position.x - other.transform.position.x;
 
             if ((_IsFacingRight && direction < 0) || (!_IsFacingRight && direction > 0))
                 _listGiveDamage[other.name] = true;
             else
             {
+                var limitePlayer = _IsFacingRight ?
+                    collider2D.transform.position.x + collider2D.bounds.size.x / 2 :
+                    collider2D.transform.position.x - collider2D.bounds.size.x / 2;
+                var limiteEnimy = _IsFacingRight ?
+                    (other.transform.position.x + other.bounds.size.x / 2) :
+                    (other.transform.position.x - other.bounds.size.x / 2);
+
+                //   Debug.DrawLine(transform.position, other.transform.position, Color.red);
+                //   Debug.DrawLine(other.transform.position, new Vector3(limiteEnimy, other.transform.position.y, 0)
+                //       , Color.blue);
+                //   Debug.DrawLine(transform.position, new Vector3(limitePlayer, transform.position.y, 0)
+                //, Color.yellow);
 
 
                 if ((_IsFacingRight && limitePlayer - limiteEnimy < 0) || (!_IsFacingRight && limitePlayer - limiteEnimy > 0))

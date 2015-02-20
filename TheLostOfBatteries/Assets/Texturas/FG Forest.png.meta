@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 5e34b1ec8d8ce9149acefcc6c1c7f33d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FG Forest
+    21300002: FG Forest_0
+    21300004: FG Forest_1
+    21300006: FG Forest_2
+    21300008: FG Forest_3
+    21300010: FG Forest_4
+    21300012: FG Forest_5
+    21300014: FG Forest_6
+    21300016: FG Forest_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: FG Forest_0
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 728
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FG Forest_1
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 994
+        width: 267
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FG Forest_2
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 860
+        width: 112
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FG Forest_3
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 502
+        width: 186
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FG Forest_4
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 330
+        width: 635
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FG Forest_5
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 196
+        width: 241
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FG Forest_6
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 236
+        width: 635
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FG Forest_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 156
+        width: 635
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

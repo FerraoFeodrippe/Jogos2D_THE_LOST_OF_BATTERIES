@@ -23,7 +23,6 @@ public class SimpleEnemyAI : MonoBehaviour, ITakeDamage, IPlayerRespawnListener 
 
     public void Update()
     {
-        Debug.Log("TEsTE");
         _controller.SetHorizontalForce(_direction.x * Speed);
 
         if ((_direction.x < 0 && _controller.State.ColidindoEsq) || (_direction.x > 0 && _controller.State.ColidindoDir))
@@ -31,6 +30,9 @@ public class SimpleEnemyAI : MonoBehaviour, ITakeDamage, IPlayerRespawnListener 
             _direction = -_direction;
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
+
+        if (Projectile == null)
+            return;
 
         if ((_canFireIn -= Time.deltaTime) > 0)
             return;
@@ -40,6 +42,7 @@ public class SimpleEnemyAI : MonoBehaviour, ITakeDamage, IPlayerRespawnListener 
             return;
 
         var projectile = (Projectile)Instantiate(Projectile, transform.position, transform.rotation);
+
         projectile.Initialize(gameObject, _direction, _controller.Velocidade);
         _canFireIn = FireRate;
     }
