@@ -118,7 +118,7 @@ public class CharacterController2D : MonoBehaviour
                 HandleInclinacaoVertical(ref deltaMoviment);
             if (Mathf.Abs(deltaMoviment.x) > 0.001f && !_jumpUP)
                 MoverHorizontal(ref deltaMoviment);
-            if (deltaMoviment.y < 0)
+            if (deltaMoviment.y < 0 ||(deltaMoviment.y > 0 && !_jumpUP))
             {
                 MoverVertical(ref deltaMoviment);
                 CorrectHorizontalPlacement(ref deltaMoviment, true);

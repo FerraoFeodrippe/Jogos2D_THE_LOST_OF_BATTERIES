@@ -115,7 +115,7 @@ public class LevelManager : MonoBehaviour {
         //FindObjectsOfType<HealthBar>().Where(e => e.name == "Health Bar " + Player.name)
         //    .FirstOrDefault().ChangeLayoutOrder("Player 2");
         Player = Players.ElementAt(CurrentPlayer);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.01f);
         //FindObjectsOfType<HealthBar>().Where(e => e.name == "Health Bar " + Player.name)
         //    .FirstOrDefault().ChangeLayoutOrder("Player");
         Player.GetComponentInChildren<SpriteRenderer>().sortingLayerName = "Player";

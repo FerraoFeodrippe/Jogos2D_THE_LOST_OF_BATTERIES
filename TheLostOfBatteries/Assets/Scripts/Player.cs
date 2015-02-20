@@ -145,7 +145,7 @@ public class Player : MonoBehaviour, ITakeDamage
             _normalizeHorizontalSpeed = 0;
         }
 
-        if (_controller.PodePular && Input.GetKeyDown(KeyCode.Z))
+        if (_controller.enabled && _controller.PodePular && Input.GetKeyDown(KeyCode.Z))
         {
             _controller.Jump();
         }
