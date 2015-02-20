@@ -6,6 +6,9 @@ public class ComputerScreen : MonoBehaviour
     public GUISkin Skin;
     public AudioClip TypingAudio;
     public AudioClip ComputerAudio;
+    
+    public AudioSource AudioPrint;
+    public AudioSource AudioError;
 
     private string Add = "Initiating . . .";
 
@@ -22,8 +25,8 @@ public class ComputerScreen : MonoBehaviour
         cursor = false;
         StartCoroutine(Loading(0.1f));
         StartCoroutine(WaitIni(4));
-        AudioSource.PlayClipAtPoint(ComputerAudio, Vector3.zero);
-    }
+        
+      }
 
     public void OnGUI()
     {
@@ -53,6 +56,7 @@ public class ComputerScreen : MonoBehaviour
                 {
                     if (!cursor)
                     {
+                        AudioPrint.Stop();
                         cursor = true;
                         StartCoroutine(Cursor(0.5f));
                         StartCoroutine(WaitForCommand());
@@ -72,7 +76,8 @@ public class ComputerScreen : MonoBehaviour
         yield return new WaitForSeconds(time);
         Add = string.Empty;
         iniciar = true;
-
+        //AudioSource.PlayClipAtPoint(ComputerAudio, Vector3.zero);
+        AudioPrint.Play();
         yield break;
 
     }
@@ -90,6 +95,7 @@ public class ComputerScreen : MonoBehaviour
             i++;
         }
         yield return new WaitForSeconds(2);
+        AudioError.Play();
         Add = "Select the date of... err4r.\n\n Date selected. Have a nice travel Doctor. Travel will start in a few seconds... \n\n _";
         yield return new WaitForSeconds(3);
 

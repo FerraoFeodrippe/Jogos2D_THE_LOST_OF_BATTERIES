@@ -8,6 +8,7 @@ public class AfterStartLevelActions : BaseLevelActions
     private CharacterController2D _controllerLeoNPC;
     public NPC_Speak LeoNPC;
     public AudioClip PunchAudio;
+    public AudioSource PowerDown;
 
     private volatile bool PunchedLeo;
     private volatile bool  PlayerCollided;
@@ -39,16 +40,16 @@ public class AfterStartLevelActions : BaseLevelActions
         BallonText.Show(Scripts_Speakers.GetTextAt(3), "LabelBallonSpeak",
     new SpeakerBallon(Camera.main, LeoNPC.transform, Scripts_Speakers.GetTextAt(3).Length * 0.2f));
         Valdemir.Animator.SetBool("IsDown", true);
-
-        yield return new WaitForSeconds(5);
-
         
+        yield return new WaitForSeconds(5);
+        PowerDown.Play(); 
+
 
         BallonText.Show(Scripts_Speakers.GetTextAt(4), "LabelBallonSpeak",
 new SpeakerBallon(Camera.main, LeoNPC.transform, Scripts_Speakers.GetTextAt(4).Length * 0.1f));
 
 
-
+        yield return new WaitForSeconds(3f);
         while (Valdemir.transform.position.x  < LeoNPC.transform.position.x -4 )
         {
             yield return new WaitForSeconds(0.1f);
@@ -59,7 +60,7 @@ new SpeakerBallon(Camera.main, LeoNPC.transform, Scripts_Speakers.GetTextAt(4).L
         BallonText.Show("AGORA COMEÇA A PUTARIA, AIAI PAPAI.", "LabelBallonSpeak",
 new SpeakerBallon(Camera.main, LeoNPC.transform, 5f));
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
 
         Application.LoadLevel("Level1");
 
@@ -76,7 +77,7 @@ new SpeakerBallon(Camera.main, LeoNPC.transform, 5f));
         _controllerLeoNPC.SetHorizontalForce(0);
         AudioSource.PlayClipAtPoint(PunchAudio, Vector3.zero);
         LeoNPC.Animator.SetTrigger("Punch");
-        Valdemir.Animator.SetTrigger("Dead");
+        Valdemir.Animator.SetTrigger("Fall");
         Valdemir.Animator.SetFloat("Speed", 100);
         _controllerValdemir.SetHorizontalForce(-100);
 
