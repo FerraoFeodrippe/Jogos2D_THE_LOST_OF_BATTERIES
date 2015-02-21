@@ -92,7 +92,7 @@ public class Player : MonoBehaviour, ITakeDamage
 
     }
 
-    public void RespawnAt(Transform spawnPoint)
+    public void RespawnAt(Transform spawnPoint, float offSet )
     {
         if (!_IsFacingRight)
             Flip();
@@ -102,7 +102,7 @@ public class Player : MonoBehaviour, ITakeDamage
         _controller.HandleCollisions = true;
         Health = MaxHealth;
 
-        transform.position = spawnPoint.position;
+        transform.position = new Vector3(spawnPoint.position.x + offSet, spawnPoint.position.y, spawnPoint.position.z);
     }
 
     public void TakeDamage(int damage, GameObject instigator)

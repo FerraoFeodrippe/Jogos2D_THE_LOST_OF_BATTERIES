@@ -57,7 +57,8 @@ public class UpRope : MonoBehaviour
             if (!Player.Focused)
                 continue;
 
-            _canUp = Player.transform.position.x - transform.position.x < 0.1 && Player.transform.position.x - transform.position.x > -0.1;
+            _canUp = Player.transform.position.x - transform.position.x < 0.1 && Player.transform.position.x - transform.position.x > -0.1 &&
+                Player.GetComponent<CharacterController2D>().PodePular;
 
 
             if (!_canUp)

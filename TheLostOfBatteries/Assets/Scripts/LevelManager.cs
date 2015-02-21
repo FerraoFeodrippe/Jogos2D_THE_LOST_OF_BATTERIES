@@ -4,13 +4,14 @@ using UnityEngine;
 using System.Linq;
 using System;
 
-public class LevelManager : MonoBehaviour {
+public class LevelManager : MonoBehaviour
+{
 
 
     public static LevelManager Instance { get; private set; }
 
-    public Player Player { get; private set;}
-    public CameraController Camera { get; private set;}
+    public Player Player { get; private set; }
+    public CameraController Camera { get; private set; }
     public TimeSpan RunningTime { get { return DateTime.UtcNow - _started; } }
 
     public int CurrentTimebonus
@@ -18,7 +19,7 @@ public class LevelManager : MonoBehaviour {
         get
         {
             var secondDifference = (int)(BonusCutoffSeconds - RunningTime.TotalSeconds);
-            return Mathf.Max(0, secondDifference) * BonusSecondMultiplier; 
+            return Mathf.Max(0, secondDifference) * BonusSecondMultiplier;
         }
     }
 
@@ -33,18 +34,20 @@ public class LevelManager : MonoBehaviour {
     public CheckPoint DebugSpawn;
     public int BonusCutoffSeconds;
     public int BonusSecondMultiplier;
+    private readonly float _factorDistancePlayers = 1;
 
-    public void Awake ()
+    public void Awake()
     {
         Instance = this;
         Players = FindObjectsOfType<Player>().OrderBy(e => e.PosPlayerSelect);
     }
 
-	public void Start () {
+    public void Start()
+    {
 
-        _checkPoints = FindObjectsOfType<CheckPoint>().OrderBy(e => e.transform.position.x ).ToList();
+        _checkPoints = FindObjectsOfType<CheckPoint>().OrderBy(e => e.transform.position.x).ToList();
         _currentCheckPointIndex = _checkPoints.Count > 0 ? 0 : -1;
-        
+
         Player = Players.ElementAt(CurrentPlayer);
         Camera = FindObjectOfType<CameraController>();
         Camera.Player = Player.transform;
@@ -69,16 +72,19 @@ public class LevelManager : MonoBehaviour {
         if (DebugSpawn != null)
             DebugSpawn.SpawnPlayer(Player);
         else if (_currentCheckPointIndex != -1)
-            _checkPoints[_currentCheckPointIndex].SpawnPlayer(Player);
+            for (var offSet = 0; offSet < Players.Count(); offSet++)
+                _checkPoints[_currentCheckPointIndex].SpawnPlayer(Players.ElementAt(offSet), offSet * _factorDistancePlayers);
 #else 
         if (_currentCheckPointIndex != -1)
-            _checkPoints[_currentCheckPointIndex].SpawnPlayer(Player);
+            for(var offSet =0; offSet< Players.Count(); offSet++)
+                _checkPoints[_currentCheckPointIndex].SpawnPlayer(Players.ElementAt(offSet), offSet*_factorDistancePlayers);
 #endif
 
-	}
-	
+    }
 
-	public void Update () {
+
+    public void Update()
+    {
 
         var isAtLastCheckPoint = _currentCheckPointIndex + 1 >= +_checkPoints.Count;
         if (isAtLastCheckPoint)
@@ -96,19 +102,19 @@ public class LevelManager : MonoBehaviour {
         _savedPoints = GameManager.Instance.Points;
         _started = DateTime.UtcNow;
 
-        
 
-	}
+
+    }
 
     public void NextPLayer()
     {
         StartCoroutine(NextPlayerCo());
     }
-   
+
     public IEnumerator NextPlayerCo()
     {
         var totalPlayer = Players.Count();
-        
+
         CurrentPlayer = (CurrentPlayer + 1) % totalPlayer;
         Player.Focused = false;
         Player.GetComponentInChildren<SpriteRenderer>().sortingLayerName = "Player 2";

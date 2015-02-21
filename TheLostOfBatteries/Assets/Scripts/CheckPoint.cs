@@ -31,9 +31,9 @@ public class CheckPoint : MonoBehaviour
 
     }
 
-    public void SpawnPlayer(Player player)
+    public void SpawnPlayer(Player player, float offSet = 0)
     {
-        player.RespawnAt(transform);
+        player.RespawnAt(transform, offSet);
 
         foreach(var listener in _listeners)
         {
