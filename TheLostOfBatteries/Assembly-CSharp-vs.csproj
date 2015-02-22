@@ -71,6 +71,8 @@
      <Compile Include="Assets\Scripts\ITakeDamage.cs" />
      <Compile Include="Assets\Scripts\Instakill.cs" />
      <Compile Include="Assets\Scripts\InteractiveObject.cs" />
+     <Compile Include="Assets\Scripts\ItensManager\BoundSlot.cs" />
+     <Compile Include="Assets\Scripts\ItensManager\Itens.cs" />
      <Compile Include="Assets\Scripts\JumpPlataform.cs" />
      <Compile Include="Assets\Scripts\LevelActions\AfterStartLevelActions.cs" />
      <Compile Include="Assets\Scripts\LevelActions\BaseLevelActions.cs" />
@@ -79,6 +81,7 @@
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\NPC_Speak.cs" />
      <Compile Include="Assets\Scripts\ObjectsPointToGet.cs" />
+     <Compile Include="Assets\Scripts\PackHealth.cs" />
      <Compile Include="Assets\Scripts\ParalexController.cs" />
      <Compile Include="Assets\Scripts\PathDefination.cs" />
      <Compile Include="Assets\Scripts\PathedProjectile.cs" />

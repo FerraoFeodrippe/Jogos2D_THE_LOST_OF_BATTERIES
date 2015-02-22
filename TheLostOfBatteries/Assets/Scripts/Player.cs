@@ -19,6 +19,7 @@ public class Player : MonoBehaviour, ITakeDamage
     public float FireRate;
     public Transform ProjectileFireLocation;
     public AudioClip PlayerPunchSound;
+    public Itens Itens;
 
     public Animator Animator { get; set; }
     private Animator AnimatorInteractive;
@@ -33,6 +34,7 @@ public class Player : MonoBehaviour, ITakeDamage
     public bool CanInput { get; set; }
 
     private float _canFireIn;
+    private float _canHeal;
     private volatile bool _giveDamage;
     private volatile Collider2D _currentEnemy;
     private volatile IList<Collider2D> _enemiesToHit;
@@ -49,12 +51,12 @@ public class Player : MonoBehaviour, ITakeDamage
         AnimatorInteractive = GetComponentsInChildren<Animator>().Where(e => e.name == "Interrogation").FirstOrDefault();
         _IsFacingRight = transform.localScale.x > 0;
         Health = MaxHealth;
-
     }
 
     public void Update()
     {
         _canFireIn -= Time.deltaTime;
+        _canHeal -= Time.deltaTime;
 
         if (!Focused || !CanInput)
         {
@@ -92,7 +94,7 @@ public class Player : MonoBehaviour, ITakeDamage
 
     }
 
-    public void RespawnAt(Transform spawnPoint, float offSet )
+    public void RespawnAt(Transform spawnPoint, float offSet)
     {
         if (!_IsFacingRight)
             Flip();
@@ -154,12 +156,20 @@ public class Player : MonoBehaviour, ITakeDamage
         {
             if (!IsNearToNpc)
             {
-                if (Projectile != null)
-                    FireProjectile();
-                else
-                    Punch();
-            }
+                var acao = Itens.GetAcao();
 
+                if (acao == Itens.Acao.Fist)
+                    Punch();
+                else if (acao== Itens.Acao.Projectile && Projectile != null)
+                    FireProjectile();
+                else if (acao == Itens.Acao.LifeRecover)
+                    HealLife();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            MoveItemFocus();
         }
 
     }
@@ -196,6 +206,17 @@ public class Player : MonoBehaviour, ITakeDamage
         if (!_giveDamage)
             return;
 
+    }
+
+    private void MoveItemFocus()
+    {
+        Itens.ChangeItem();
+    }
+
+    public void HealLife()
+    {
+        Health++;
+        Health = Mathf.Min(Health, MaxHealth);
     }
 
     private void FireProjectile()
@@ -256,7 +277,7 @@ public class Player : MonoBehaviour, ITakeDamage
             //}
             //Debug.Log(name + ":TERMINA");
 
-            
+
             //Debug.Log(name + ": COMEÇA");
             //Debug.Log(other.name + " Removido");
             //foreach(var enemy in _enemiesToHit  )

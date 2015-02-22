@@ -15,6 +15,7 @@ public class Level1Actions : BaseLevelActions
     {
         Valdemir.CanInput = true;
         Leo.CanInput = true;
+        
 
     }
 
