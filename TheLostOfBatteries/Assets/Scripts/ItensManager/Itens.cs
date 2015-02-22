@@ -63,10 +63,11 @@ public class Itens : MonoBehaviour
         return true;
     }
 
-    public void ChangeItem()
+    public string ChangeItem()
     {
         var nextItem = (_itemActual + 1) % _itens.Count;
         _itemActual = nextItem;
+        return _itens[_itemActual];
     }
 
     public Acao GetAcao()

@@ -19,6 +19,7 @@ public class Player : MonoBehaviour, ITakeDamage
     public float FireRate;
     public Transform ProjectileFireLocation;
     public AudioClip PlayerPunchSound;
+    public AudioClip PlayerProjectileSound;
     public Itens Itens;
 
     public Animator Animator { get; set; }
@@ -32,6 +33,7 @@ public class Player : MonoBehaviour, ITakeDamage
     public int Health { get; private set; }
     public bool IsDead { get; private set; }
     public bool CanInput { get; set; }
+    public bool IsArmado { get; set; }
 
     private float _canFireIn;
     private float _canHeal;
@@ -43,6 +45,7 @@ public class Player : MonoBehaviour, ITakeDamage
 
     public void Awake()
     {
+        Itens.Add("LeoArma");
         _enemiesToHit = new List<Collider2D>();
         _routines = new Dictionary<string, IEnumerator>();
         _listGiveDamage = new Dictionary<string, bool>();
@@ -82,6 +85,7 @@ public class Player : MonoBehaviour, ITakeDamage
         Animator.SetFloat("Speed", Mathf.Abs(_controller.Velocidade.x) / MaxSpeed);
         AnimatorInteractive.GetComponent<SpriteRenderer>().enabled = IsNearToInteractiveObject;
         AnimatorInteractive.SetBool("IsInterrogation", IsNearToInteractiveObject);
+        Animator.SetBool("IsArmado", IsArmado);
     }
 
     public void Kill()
@@ -160,7 +164,7 @@ public class Player : MonoBehaviour, ITakeDamage
 
                 if (acao == Itens.Acao.Fist)
                     Punch();
-                else if (acao== Itens.Acao.Projectile && Projectile != null)
+                else if (acao == Itens.Acao.Projectile)
                     FireProjectile();
                 else if (acao == Itens.Acao.LifeRecover)
                     HealLife();
@@ -210,7 +214,9 @@ public class Player : MonoBehaviour, ITakeDamage
 
     private void MoveItemFocus()
     {
-        Itens.ChangeItem();
+        IsArmado = Itens.ChangeItem().Contains("Arma");
+        //if (IsArmado)
+        //    Animator.SetTrigger("GetWeapon");
     }
 
     public void HealLife()
@@ -223,14 +229,17 @@ public class Player : MonoBehaviour, ITakeDamage
     {
         if (_canFireIn > 0)
             return;
+        AudioSource.PlayClipAtPoint(PlayerProjectileSound, transform.position);
 
         var direction = _IsFacingRight ? Vector2.right : -Vector2.right;
 
-        Animator.SetTrigger("Punch");
+        Animator.SetTrigger("Shoot");
 
-        var projectile = (Projectile)Instantiate(Projectile, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
-        projectile.Initialize(gameObject, direction, _controller.Velocidade);
-
+        if (Projectile != null)
+        {
+            var projectile = (Projectile)Instantiate(Projectile, ProjectileFireLocation.position, ProjectileFireLocation.rotation);
+            projectile.Initialize(gameObject, direction, _controller.Velocidade);
+        }
         _canFireIn = FireRate;
 
 

@@ -1,0 +1,1687 @@
+fileFormatVersion: 2
+guid: 84f1c6d7ce77b9a4f846e6bfaff2c6b0
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dancer_Whips_noBG
+    21300002: Dancer_Whips_noBG_0
+    21300004: Dancer_Whips_noBG_1
+    21300006: Dancer_Whips_noBG_2
+    21300008: Dancer_Whips_noBG_3
+    21300010: Dancer_Whips_noBG_4
+    21300012: Dancer_Whips_noBG_5
+    21300014: Dancer_Whips_noBG_6
+    21300016: Dancer_Whips_noBG_7
+    21300018: Dancer_Whips_noBG_8
+    21300020: Dancer_Whips_noBG_9
+    21300022: Dancer_Whips_noBG_10
+    21300024: Dancer_Whips_noBG_11
+    21300026: Dancer_Whips_noBG_12
+    21300028: Dancer_Whips_noBG_13
+    21300030: Dancer_Whips_noBG_14
+    21300032: Dancer_Whips_noBG_15
+    21300034: Dancer_Whips_noBG_16
+    21300036: Dancer_Whips_noBG_17
+    21300038: Dancer_Whips_noBG_18
+    21300040: Dancer_Whips_noBG_19
+    21300042: Dancer_Whips_noBG_20
+    21300044: Dancer_Whips_noBG_21
+    21300046: Dancer_Whips_noBG_22
+    21300048: Dancer_Whips_noBG_23
+    21300050: Dancer_Whips_noBG_24
+    21300052: Dancer_Whips_noBG_25
+    21300054: Dancer_Whips_noBG_26
+    21300056: Dancer_Whips_noBG_27
+    21300058: Dancer_Whips_noBG_28
+    21300060: Dancer_Whips_noBG_29
+    21300062: Dancer_Whips_noBG_30
+    21300064: Dancer_Whips_noBG_31
+    21300066: Dancer_Whips_noBG_32
+    21300068: Dancer_Whips_noBG_33
+    21300070: Dancer_Whips_noBG_34
+    21300072: Dancer_Whips_noBG_35
+    21300074: Dancer_Whips_noBG_36
+    21300076: Dancer_Whips_noBG_37
+    21300078: Dancer_Whips_noBG_38
+    21300080: Dancer_Whips_noBG_39
+    21300082: Dancer_Whips_noBG_40
+    21300084: Dancer_Whips_noBG_41
+    21300086: Dancer_Whips_noBG_42
+    21300088: Dancer_Whips_noBG_43
+    21300090: Dancer_Whips_noBG_44
+    21300092: Dancer_Whips_noBG_45
+    21300094: Dancer_Whips_noBG_46
+    21300096: Dancer_Whips_noBG_47
+    21300098: Dancer_Whips_noBG_48
+    21300100: Dancer_Whips_noBG_49
+    21300102: Dancer_Whips_noBG_50
+    21300104: Dancer_Whips_noBG_51
+    21300106: Dancer_Whips_noBG_52
+    21300108: Dancer_Whips_noBG_53
+    21300110: Dancer_Whips_noBG_54
+    21300112: Dancer_Whips_noBG_55
+    21300114: Dancer_Whips_noBG_56
+    21300116: Dancer_Whips_noBG_57
+    21300118: Dancer_Whips_noBG_58
+    21300120: Dancer_Whips_noBG_59
+    21300122: Dancer_Whips_noBG_60
+    21300124: Dancer_Whips_noBG_61
+    21300126: Dancer_Whips_noBG_62
+    21300128: Dancer_Whips_noBG_63
+    21300130: Dancer_Whips_noBG_64
+    21300132: Dancer_Whips_noBG_65
+    21300134: Dancer_Whips_noBG_66
+    21300136: Dancer_Whips_noBG_67
+    21300138: Dancer_Whips_noBG_68
+    21300140: Dancer_Whips_noBG_69
+    21300142: Dancer_Whips_noBG_70
+    21300144: Dancer_Whips_noBG_71
+    21300146: Dancer_Whips_noBG_72
+    21300148: Dancer_Whips_noBG_73
+    21300150: Dancer_Whips_noBG_74
+    21300152: Dancer_Whips_noBG_75
+    21300154: Dancer_Whips_noBG_76
+    21300156: Dancer_Whips_noBG_77
+    21300158: Dancer_Whips_noBG_78
+    21300160: Dancer_Whips_noBG_79
+    21300162: Dancer_Whips_noBG_80
+    21300164: Dancer_Whips_noBG_81
+    21300166: Dancer_Whips_noBG_82
+    21300168: Dancer_Whips_noBG_83
+    21300170: Dancer_Whips_noBG_84
+    21300172: Dancer_Whips_noBG_85
+    21300174: Dancer_Whips_noBG_86
+    21300176: Dancer_Whips_noBG_87
+    21300178: Dancer_Whips_noBG_88
+    21300180: Dancer_Whips_noBG_89
+    21300182: Dancer_Whips_noBG_90
+    21300184: Dancer_Whips_noBG_91
+    21300186: Dancer_Whips_noBG_92
+    21300188: Dancer_Whips_noBG_93
+    21300190: Dancer_Whips_noBG_94
+    21300192: Dancer_Whips_noBG_95
+    21300194: Dancer_Whips_noBG_96
+    21300196: Dancer_Whips_noBG_97
+    21300198: Dancer_Whips_noBG_98
+    21300200: Dancer_Whips_noBG_99
+    21300202: Dancer_Whips_noBG_100
+    21300204: Dancer_Whips_noBG_101
+    21300206: Dancer_Whips_noBG_102
+    21300208: Dancer_Whips_noBG_103
+    21300210: Dancer_Whips_noBG_104
+    21300212: Dancer_Whips_noBG_105
+    21300214: Dancer_Whips_noBG_106
+    21300216: Dancer_Whips_noBG_107
+    21300218: Dancer_Whips_noBG_108
+    21300220: Dancer_Whips_noBG_109
+    21300222: Dancer_Whips_noBG_110
+    21300224: Dancer_Whips_noBG_111
+    21300226: Dancer_Whips_noBG_112
+    21300228: Dancer_Whips_noBG_113
+    21300230: Dancer_Whips_noBG_114
+    21300232: Dancer_Whips_noBG_115
+    21300234: Dancer_Whips_noBG_116
+    21300236: Dancer_Whips_noBG_117
+    21300238: Dancer_Whips_noBG_118
+    21300240: Dancer_Whips_noBG_119
+    21300242: Dancer_Whips_noBG_120
+    21300244: Dancer_Whips_noBG_121
+    21300246: Dancer_Whips_noBG_122
+    21300248: Dancer_Whips_noBG_123
+    21300250: Dancer_Whips_noBG_124
+    21300252: Dancer_Whips_noBG_125
+    21300254: Dancer_Whips_noBG_126
+    21300256: Dancer_Whips_noBG_127
+    21300258: Dancer_Whips_noBG_128
+    21300260: Dancer_Whips_noBG_129
+    21300262: Dancer_Whips_noBG_130
+    21300264: Dancer_Whips_noBG_131
+    21300266: Dancer_Whips_noBG_132
+    21300268: Dancer_Whips_noBG_133
+    21300270: Dancer_Whips_noBG_134
+    21300272: Dancer_Whips_noBG_135
+    21300274: Dancer_Whips_noBG_136
+    21300276: Dancer_Whips_noBG_137
+    21300278: Dancer_Whips_noBG_138
+    21300280: Dancer_Whips_noBG_139
+    21300282: Dancer_Whips_noBG_140
+    21300284: Dancer_Whips_noBG_141
+    21300286: Dancer_Whips_noBG_142
+    21300288: Dancer_Whips_noBG_143
+    21300290: Dancer_Whips_noBG_144
+    21300292: Dancer_Whips_noBG_145
+    21300294: Dancer_Whips_noBG_146
+    21300296: Dancer_Whips_noBG_147
+    21300298: Dancer_Whips_noBG_148
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Dancer_Whips_noBG_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 297
+        width: 872
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 362
+        width: 35
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 362
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_3
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 385
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_4
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 362
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_5
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 362
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_6
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 299
+        width: 43
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 362
+        width: 5
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_8
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 357
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_9
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 362
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_10
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 362
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_11
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 362
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_12
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 362
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_13
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 362
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_14
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 362
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_15
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 362
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_16
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 362
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_17
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 339
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_18
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 339
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_19
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 339
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_20
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 336
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_21
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 339
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_22
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 339
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_23
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 339
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_24
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 323
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_25
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 339
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_26
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 339
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_27
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 336
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_28
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 339
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_29
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 339
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_30
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 339
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_31
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 339
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_32
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 323
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_33
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 320
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_34
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 323
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_35
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 323
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_36
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 323
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_37
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 323
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_38
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 320
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_39
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 323
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_40
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 323
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_41
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 323
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_42
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 323
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_43
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 320
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_44
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 323
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_45
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 320
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_46
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 323
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_47
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 323
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_48
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 323
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_49
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 323
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_50
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 323
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_51
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 307
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_52
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 307
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_53
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 304
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_54
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 304
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_55
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 304
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_56
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 307
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_57
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 307
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_58
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 307
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_59
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 307
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_60
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 304
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_61
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 307
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_62
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 304
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_63
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 307
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_64
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 307
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_65
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 304
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_66
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 307
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_67
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 307
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_68
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 307
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_69
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 252
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_70
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 250
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_71
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 252
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_72
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 248
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_73
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 239
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_74
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 238
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_75
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 237
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_76
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 251
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_77
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 254
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_78
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 251
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_79
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 250
+        width: 68
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_80
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 252
+        width: 59
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_81
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 252
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_82
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 267
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_83
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 267
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_84
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 267
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_85
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 267
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_86
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 267
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_87
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 267
+        width: 4
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_88
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 267
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_89
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 258
+        width: 76
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_90
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 241
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_91
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 241
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_92
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 241
+        width: 4
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_93
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 236
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_94
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 179
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_95
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 177
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_96
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 178
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_97
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 175
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_98
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 166
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_99
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 165
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_100
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 164
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_101
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 178
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_102
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 181
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_103
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 178
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_104
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 177
+        width: 68
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_105
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 185
+        width: 76
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_106
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 179
+        width: 59
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_107
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 179
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_108
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 184
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_109
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 184
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_110
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 184
+        width: 4
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_111
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 179
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_112
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 111
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_113
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 110
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_114
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 110
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_115
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 107
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_116
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 98
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_117
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 97
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_118
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 96
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_119
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 109
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_120
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 113
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_121
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 110
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_122
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 109
+        width: 68
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_123
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 117
+        width: 76
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_124
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 111
+        width: 58
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_125
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 111
+        width: 30
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_126
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 117
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_127
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 117
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_128
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 117
+        width: 4
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_129
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 117
+        width: 4
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_130
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 27
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_131
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 26
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_132
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 27
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_133
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 24
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_134
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 15
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_135
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 11
+        width: 67
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_136
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 6
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_137
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 25
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_138
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 29
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_139
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 27
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_140
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 26
+        width: 75
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_141
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 32
+        width: 82
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_142
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 27
+        width: 67
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_143
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 27
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_144
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 32
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_145
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 32
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_146
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 32
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_147
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 32
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dancer_Whips_noBG_148
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 32
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
