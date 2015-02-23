@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: 1af5abe3a48bf384ab7e58bc7641ec00
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: AxeArmor
+    21300002: AxeArmor_0
+    21300004: AxeArmor_1
+    21300006: AxeArmor_2
+    21300008: AxeArmor_3
+    21300010: AxeArmor_4
+    21300012: AxeArmor_5
+    21300014: AxeArmor_6
+    21300016: AxeArmor_7
+    21300018: AxeArmor_8
+    21300020: AxeArmor_9
+    21300022: AxeArmor_10
+    21300024: AxeArmor_11
+    21300026: AxeArmor_12
+    21300028: AxeArmor_13
+    21300030: AxeArmor_14
+    21300032: AxeArmor_15
+    21300034: AxeArmor_16
+    21300036: AxeArmor_17
+    21300038: AxeArmor_18
+    21300040: AxeArmor_19
+    21300042: AxeArmor_20
+    21300044: AxeArmor_21
+    21300046: AxeArmor_22
+    21300048: AxeArmor_23
+    21300050: AxeArmor_24
+    21300052: AxeArmor_25
+    21300054: AxeArmor_26
+    21300056: AxeArmor_27
+    21300058: AxeArmor_28
+    21300060: AxeArmor_29
+    21300062: AxeArmor_30
+    21300064: AxeArmor_31
+    21300066: AxeArmor_32
+    21300068: AxeArmor_33
+    21300070: AxeArmor_34
+    21300072: AxeArmor_35
+    21300074: AxeArmor_36
+    21300076: AxeArmor_37
+    21300078: AxeArmor_38
+    21300080: AxeArmor_39
+    21300082: AxeArmor_40
+    21300084: AxeArmor_41
+    21300086: AxeArmor_42
+    21300088: AxeArmor_43
+    21300090: AxeArmor_44
+    21300092: AxeArmor_45
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: AxeArmor_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 272
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 272
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 272
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 272
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_4
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 272
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_5
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 272
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 272
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_7
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 272
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_8
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 272
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_9
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 272
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_10
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 272
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_11
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 272
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_12
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 272
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_13
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 272
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_14
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 272
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_15
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 272
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 181
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_17
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 181
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_18
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 181
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_19
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 181
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_20
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 181
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_21
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 181
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_22
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 181
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_23
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 181
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_24
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 181
+        width: 30
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_25
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 181
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_26
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 181
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_27
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 181
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_28
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 181
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_30
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 103
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_31
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 103
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_32
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 103
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_33
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 103
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_34
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 103
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_35
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 103
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_36
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 103
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_37
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 103
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_38
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 103
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_39
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 103
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_40
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 103
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_41
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 103
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_42
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 103
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_43
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 103
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_44
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 38
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: AxeArmor_45
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 38
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: c168b9d10efe80d439d51b93f08e8efb
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ghost do outro lado da vida
+    21300002: ghost do outro lado da vida_0
+    21300004: ghost do outro lado da vida_1
+    21300006: ghost do outro lado da vida_2
+    21300008: ghost do outro lado da vida_3
+    21300010: ghost do outro lado da vida_4
+    21300012: ghost do outro lado da vida_5
+    21300014: ghost do outro lado da vida_6
+    21300016: ghost do outro lado da vida_7
+    21300018: ghost do outro lado da vida_8
+    21300020: ghost do outro lado da vida_9
+    21300022: ghost do outro lado da vida_11
+    21300024: ghost do outro lado da vida_12
+    21300026: ghost do outro lado da vida_13
+    21300028: ghost do outro lado da vida_14
+    21300030: ghost do outro lado da vida_15
+    21300032: ghost do outro lado da vida_16
+    21300034: ghost do outro lado da vida_17
+    21300036: ghost do outro lado da vida_18
+    21300038: ghost do outro lado da vida_19
+    21300040: ghost do outro lado da vida_20
+    21300042: ghost do outro lado da vida_21
+    21300044: ghost do outro lado da vida_22
+    21300046: ghost do outro lado da vida_23
+    21300048: ghost do outro lado da vida_24
+    21300050: ghost do outro lado da vida_25
+    21300052: ghost do outro lado da vida_26
+    21300054: ghost do outro lado da vida_27
+    21300056: ghost do outro lado da vida_28
+    21300058: ghost do outro lado da vida_29
+    21300060: ghost do outro lado da vida_30
+    21300062: ghost do outro lado da vida_31
+    21300064: ghost do outro lado da vida_32
+    21300066: ghost do outro lado da vida_33
+    21300068: ghost do outro lado da vida_34
+    21300070: ghost do outro lado da vida_35
+    21300072: ghost do outro lado da vida_36
+    21300074: ghost do outro lado da vida_37
+    21300076: ghost do outro lado da vida_39
+    21300078: ghost do outro lado da vida_40
+    21300080: ghost do outro lado da vida_44
+    21300082: ghost do outro lado da vida_45
+    21300084: ghost do outro lado da vida_50
+    21300086: ghost do outro lado da vida_49
+    21300088: ghost do outro lado da vida_50
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ghost do outro lado da vida_0
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 843
+        width: 67
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_1
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 843
+        width: 66
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_2
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 843
+        width: 64
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_3
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 843
+        width: 64
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_4
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 843
+        width: 63
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_5
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 843
+        width: 66
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_6
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 745
+        width: 80
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_7
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 745
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_8
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 745
+        width: 81
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_9
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 745
+        width: 86
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_11
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 744
+        width: 86
+        height: 85
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_12
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 754
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_13
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 746
+        width: 89
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_14
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 631
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 519
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_16
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 520
+        width: 99
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_17
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 520
+        width: 88
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_18
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 520
+        width: 154
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_19
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 520
+        width: 162
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_20
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 520
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_21
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 520
+        width: 160
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_22
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 520
+        width: 92
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_23
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 520
+        width: 91
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 368
+        width: 114
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_25
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 368
+        width: 111
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_26
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 368
+        width: 116
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_27
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 368
+        width: 112
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_28
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 368
+        width: 117
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_29
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 368
+        width: 88
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_30
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 368
+        width: 91
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_31
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 368
+        width: 87
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_32
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 368
+        width: 91
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_33
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 368
+        width: 87
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_34
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 368
+        width: 91
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_35
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 368
+        width: 86
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_36
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 232
+        width: 82
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_37
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 232
+        width: 101
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_39
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 106
+        width: 61
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_40
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 106
+        width: 76
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_44
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 109
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_45
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 111
+        width: 60
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_50
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 104
+        width: 85
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_49
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 111
+        width: 64
+        height: 55
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ghost do outro lado da vida_50
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 109
+        width: 70
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
