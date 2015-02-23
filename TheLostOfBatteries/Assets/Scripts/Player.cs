@@ -45,7 +45,7 @@ public class Player : MonoBehaviour, ITakeDamage
 
     public void Awake()
     {
-        Itens.Add("LeoArma");
+    //    Itens.Add(name + "Arma");
         _enemiesToHit = new List<Collider2D>();
         _routines = new Dictionary<string, IEnumerator>();
         _listGiveDamage = new Dictionary<string, bool>();
@@ -214,7 +214,8 @@ public class Player : MonoBehaviour, ITakeDamage
 
     private void MoveItemFocus()
     {
-        IsArmado = Itens.ChangeItem().Contains("Arma");
+        if (Itens != null)
+           IsArmado = Itens.ChangeItem().Contains("Arma");
         //if (IsArmado)
         //    Animator.SetTrigger("GetWeapon");
     }

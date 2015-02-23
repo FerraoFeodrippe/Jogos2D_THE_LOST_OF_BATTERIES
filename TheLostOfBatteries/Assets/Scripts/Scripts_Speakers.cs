@@ -21,8 +21,24 @@ lo phodão.Gostaria de lembrar a todos que amo Bruna e que já dei para túlio. 
      
     };
 
+    private static readonly string[] Level1Texts = 
+    {
+        /*Valdemir*/ "Owwooow man, isso foi doido mas foi legal. LOL",
+        /*Leo*/ @"O . O
+Wtf. Ela funcionou... Valdemir seu nojento... Estou com raiva e ao memso tempo supreso por ter funcionado...
+e pelo jeito estamos na época dos dinossaros... Tome cuidado. Vamos achar a máquina e voltar.",
+        /*Valdemir*/ "Dinossauros? Cool man!!!",
+        /*Leo*/ "Agora shut up e vamos explorar isso aqui logo.",
+
+    };
+
     public static string GetTextAt(int pos)
     {
         return Texts[pos];
+    }
+
+    public static string GetTextLevel1At(int pos)
+    {
+        return Level1Texts[pos];
     }
 }
