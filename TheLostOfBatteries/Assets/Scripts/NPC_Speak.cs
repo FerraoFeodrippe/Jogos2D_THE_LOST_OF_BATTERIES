@@ -25,7 +25,7 @@ public class NPC_Speak : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X))
         {
             IsSpeaking= true;
-            BaseLevelActions.Instance.OnTriggerSpeaked();
+            BaseLevelActions.Instance.DoAction(gameObject.name);
             var fala = Scripts_Speakers.GetTextAt(NumberSpeakSequence[_sequenceActual]);
             if (_sequenceActual +1 < NumberSpeakSequence.Count())
                 _sequenceActual++;

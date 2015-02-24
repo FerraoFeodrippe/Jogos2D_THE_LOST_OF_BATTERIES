@@ -2,7 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ExtraPlayerFunctions\UpRope.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets\Scripts\SimpleEnemyAI.cs" Line="1" Column="1" />
+=======
+      <File FileName="Assets\Scripts\InteractiveObject.cs" Line="1" Column="1" />
+>>>>>>> a3dde88698dfb5607736d4c574b2384da9f6033a
       <File FileName="Assets\Scripts\ExtraPlayerFunctions\UpRope.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\InteractiveObject.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ItensManager\Itens.cs" Line="1" Column="1" />

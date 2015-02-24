@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class BaseLevelActions:MonoBehaviour
 {
@@ -15,5 +16,6 @@ public class BaseLevelActions:MonoBehaviour
     public virtual void PlayerOnCollider(Collider2D other) { }
     public virtual void NPCOnCollider(Collider2D other) { }
     public virtual void SetInputPlayer(bool pode) { }
+
 }
 

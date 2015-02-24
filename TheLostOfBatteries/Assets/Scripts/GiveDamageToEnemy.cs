@@ -18,18 +18,19 @@ public class GiveDamageToEnemy: MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        var enemy = other.tag == "Enemy" ? other : null;
-        if (enemy == null)
+        var enemyT = other.tag == "Enemy" ? other : null;
+        if (enemyT == null)
             return;
-
-        var controller = enemy.GetComponent<CharacterController2D>();
+        var enemy = (ITakeDamage) other.GetComponent<MonoBehaviour>().GetComponent(typeof(ITakeDamage));
+        enemy.TakeDamage(1, gameObject);
+        var controller = enemyT.GetComponent<CharacterController2D>();
         var totalVelocity = controller.Velocidade + _velocity;
 
         controller.SetForce(new Vector2(
             -1 * Mathf.Sign(totalVelocity.x) * Mathf.Clamp(Mathf.Abs(totalVelocity.x) * 5, 5, 5),
             -1 * Mathf.Sign(totalVelocity.y) * Mathf.Clamp(Mathf.Abs(totalVelocity.y) * 2, 0, 5)));
 
-        enemy.gameObject.SetActive(false);
+        //enemy.gameObject.SetActive(false);
 
     }   
 
