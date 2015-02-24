@@ -5,7 +5,7 @@ public class Level2Actions : BaseLevelActions
 {
     public Player Valdemir;
     public Player Leo;
-    public GameObject Armor1;
+    //public GameObject Armor1;
     private CharacterController2D _controllerValdemir;
     private CharacterController2D _controllerLeo;
 
@@ -29,7 +29,7 @@ public class Level2Actions : BaseLevelActions
 
         yield return new WaitForSeconds(2f);
 
-        Armor1.SetActive(false);
+        //Armor1.SetActive(false);
 
         yield break;
     }

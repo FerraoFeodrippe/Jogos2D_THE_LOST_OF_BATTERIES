@@ -353,7 +353,7 @@ public class CharacterController2D : MonoBehaviour
 
         if (angle > Parameters.AlguloLimite)
         {
-            deltaMoviment.x = 0;
+            //deltaMoviment.x = 0;
             return true;
         }
 

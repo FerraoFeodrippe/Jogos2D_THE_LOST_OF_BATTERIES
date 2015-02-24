@@ -15,6 +15,7 @@ public class InteractiveObjectDisapear : InteractiveObject
         if (Input.GetKeyDown(KeyCode.X))
         {
                         //   BaseLevelActions.Instance.SetInputPlayer(false);
+			transform.Rotate(0, Input.GetAxis("Horizontal")*1*Time.deltaTime, 0,Space.World);
             IsInteracting = true;
             if (Sound != null)
                 AudioSource.PlayClipAtPoint(Sound, Vector3.zero);

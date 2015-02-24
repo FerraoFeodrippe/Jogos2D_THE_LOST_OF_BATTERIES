@@ -8,7 +8,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  m_Layer: 0
+  - 61: {fileID: 6104186}
+  m_Layer: 8
   m_Name: Castle2x3 Tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 212: {fileID: 21200000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: castle_0_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400004}
   - 212: {fileID: 21200002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: castle_0_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +57,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400006}
   - 212: {fileID: 21200004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: castle_0_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +73,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400008}
   - 212: {fileID: 21200006}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: castle_0_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +89,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400010}
   - 212: {fileID: 21200008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: castle_0_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +105,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400012}
   - 212: {fileID: 21200010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: castle_0_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,6 +202,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 0
+--- !u!61 &6104186
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.27999997, y: 1.91999996}
+  m_Center: {x: -.0799999982, y: .0199999996}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -219,7 +231,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3511083705
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300032, guid: 46d240693816bab4899d0418f4033e90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -241,7 +253,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3511083705
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300034, guid: 46d240693816bab4899d0418f4033e90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -263,7 +275,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3511083705
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300034, guid: 46d240693816bab4899d0418f4033e90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -285,7 +297,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3511083705
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300032, guid: 46d240693816bab4899d0418f4033e90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -307,7 +319,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3511083705
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300018, guid: 46d240693816bab4899d0418f4033e90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -329,7 +341,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 3511083705
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300016, guid: 46d240693816bab4899d0418f4033e90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
