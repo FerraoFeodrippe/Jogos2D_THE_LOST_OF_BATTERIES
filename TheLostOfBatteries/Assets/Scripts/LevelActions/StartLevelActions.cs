@@ -34,11 +34,11 @@ public class StartLevelActions : BaseLevelActions
         StartCoroutine(nome);
     }
 
-
-    public override void OnTriggerSpeaked()
+    private IEnumerator Leo_NPC()
     {
         TimeMachine.enabled = true;
         SpeakedWithLeo = true;
+        yield break;
     }
 
     public override void OnTriggerInteracted()
@@ -58,6 +58,7 @@ public class StartLevelActions : BaseLevelActions
     public IEnumerator Time_Machine()
     {
         Valdemir.CanInput = false;
+
         yield break;
     }
 

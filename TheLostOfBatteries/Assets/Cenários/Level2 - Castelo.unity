@@ -807,7 +807,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 54075898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.18509865, y: -3.41254711, z: 0}
+  m_LocalPosition: {x: 4.90929413, y: -2.55044937, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1902448956}
@@ -10318,7 +10318,7 @@ GameObject:
   - 4: {fileID: 881888332}
   - 114: {fileID: 881888331}
   m_Layer: 0
-  m_Name: Level1
+  m_Name: Level2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10332,11 +10332,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 881888330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 160472d858bdd3f42b78f4281d055030, type: 3}
+  m_Script: {fileID: 11500000, guid: c9436f4e03a605f459ebc31d0657477f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Valdemir: {fileID: 1178853831}
   Leo: {fileID: 1307754474}
+  Armor1: {fileID: 1069248757}
 --- !u!4 &881888332
 Transform:
   m_ObjectHideFlags: 0
@@ -12155,6 +12156,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1069248759}
   - 212: {fileID: 1069248758}
+  - 61: {fileID: 1069248761}
+  - 114: {fileID: 1069248760}
   m_Layer: 0
   m_Name: Armor
   m_TagString: Untagged
@@ -12181,7 +12184,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 2364115775
+  m_SortingLayerID: 3511083705
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300006, guid: 8bffec08d1a5e4d409f76e3d5c2a5e2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12197,6 +12200,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2093344750}
   m_RootOrder: 0
+--- !u!114 &1069248760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069248757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdefb7c5a86755a4a8a82e7bd6dec239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sound: {fileID: 0}
+  ObjectToDisappear: {fileID: 1069248757}
+--- !u!61 &1069248761
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069248757}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .569999993, y: 1.34000003}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1071226117
 GameObject:
   m_ObjectHideFlags: 0
@@ -19659,6 +19686,10 @@ Prefab:
     - target: {fileID: 400000, guid: 55d1db0e7f26f634d97952e1bff1e949, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 55d1db0e7f26f634d97952e1bff1e949, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 3511083705
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55d1db0e7f26f634d97952e1bff1e949, type: 2}

@@ -158,7 +158,7 @@ public class Player : MonoBehaviour, ITakeDamage
 
         if (Input.GetKeyDown(KeyCode.X) && Application.loadedLevelName != "start")
         {
-            if (!IsNearToNpc)
+            if (!IsNearToNpc && !IsNearToInteractiveObject)
             {
                 var acao = Itens.GetAcao();
 

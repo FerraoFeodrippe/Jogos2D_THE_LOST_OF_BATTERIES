@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\ITakeDamage.cs" />
      <Compile Include="Assets\Scripts\Instakill.cs" />
      <Compile Include="Assets\Scripts\InteractiveObject.cs" />
+     <Compile Include="Assets\Scripts\InteractiveObjectDisapear.cs" />
      <Compile Include="Assets\Scripts\ItensManager\BoundSlot.cs" />
      <Compile Include="Assets\Scripts\ItensManager\Itens.cs" />
      <Compile Include="Assets\Scripts\JumpPlataform.cs" />
